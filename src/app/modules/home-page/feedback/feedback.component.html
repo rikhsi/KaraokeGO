@@ -1,0 +1,58 @@
+<div class="container feedback__bg">
+    <div nz-row [nzGutter]="[36,24]">
+        <div nz-col nzXl="12" nzXs="24">
+            <div nz-row [nzGutter]="[0,24]">
+                <h2 nz-col nzSpan="24" class="feedback__title">Свяжитесь с нами</h2>
+                <p nz-col nzSpan="24" class="feedback__text">
+                    Оставьте заявку и мы свяжемся 
+                    с вами сами, расскажем 
+                     и объясним, что делать дальше
+                </p>
+            </div>
+        </div>
+        <div nz-col nzXl="12" nzXs="24">
+            <form [formGroup]="form" (ngSubmit)="submit()" class="feedback__form">
+                <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]" *ngFor="let data of formInputs.inputs">
+                    <label nz-col nzSpan="24">
+                        <span class="form__label">{{data.title + '*'}}</span>
+                    </label>
+                    <nz-form-control nzSpan="24">
+                        <input nz-input [placeholder]="data.placeholder" [formControlName]="data.controlName">
+                    </nz-form-control>
+                </nz-form-item>
+                <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]">
+                    <label nz-col nzSpan="24">
+                        <span class="form__label">{{formInputs.calendar.title + '*'}}</span>
+                    </label>
+                    <nz-form-control nzSpan="24">
+                        <nz-date-picker 
+                            nzFormat="yyyy-MM-dd HH:mm" 
+                            [nzPlacement]="'bottomLeft'"
+                            [nzBackdrop]="false"
+                            [nzPlaceHolder]="formInputs.calendar.placeholder" 
+                            [nzDisabledDate]="disabledDate" 
+                            [nzShowNow]="false" 
+                            [nzShowTime]="{ nzFormat: 'HH:mm' }" 
+                            [nzSuffixIcon]="''" 
+                            [nzAllowClear]="false" 
+                            [formControlName]="formInputs.calendar.controlName">
+                        </nz-date-picker>
+                    </nz-form-control>
+                </nz-form-item>
+                <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]">
+                    <label nz-col nzSpan="24">
+                        <span class="form__label">{{formInputs.area.title + '*'}}</span>
+                    </label>
+                    <nz-form-control nzSpan="24">
+                        <textarea nz-input [placeholder]="formInputs.area.placeholder" formControlName="message"  class="form__area"></textarea>
+                    </nz-form-control>
+                </nz-form-item>
+                <div>
+                    <button class="form__button">Отправить заявку</button>
+                    <p class="form__politic">Отправляя данную форму вы даете согласие на обработку персональных данных</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

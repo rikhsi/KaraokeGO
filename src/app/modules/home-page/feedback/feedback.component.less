@@ -1,0 +1,113 @@
+@import '../../../styles/colors.less';
+@import '../../../styles/fonts.less';
+
+.feedback{
+    &__bg{
+        background-color: @mainBlack;
+    }
+    &__title{
+        color: @white;
+    }
+    &__text{
+        .text(500,36px,125%,@white);
+
+        @media (max-width:767px) {
+            font-size: 20px;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        
+        @media (max-width:767px) {
+            gap: 16px;
+        }
+    }
+}
+
+.form{
+    &__label{
+        .text(400,16px,125%,@white);
+    }
+    &__area{
+       height: 120px;
+    }
+    &__button{
+        width: 100%;
+        padding: 24px;
+        margin-bottom: 16px;
+        background: #FFD54B;
+        border: none;
+        border-radius: 24px;
+
+        .text(500,20px,125%,@mainBlack);
+    }
+    &__politic{
+        min-width: 100%;
+        text-align: center;
+        .text(400,14px,125%,@grayishWhite);
+    }
+}
+
+[nz-input]{
+    padding: 16px 24px;
+    background-color: inherit !important;
+    border: 1px solid @grayishWhite;
+    border-radius: 16px;
+    transition: 0.3s;
+    resize: none;
+    .text(400,16px,125%,@white);
+
+    &::placeholder{
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: @grayishWhite;
+    }
+
+    &:hover{
+        transition: 0.3s;
+        border-color: @mainOrange;
+        outline: none;
+        box-shadow: none;
+    }
+
+    &:focus{
+        transition: 0.3s;
+        border-color: inherit;
+    }
+}
+
+::ng-deep .ant-picker{
+    width: 100%;
+    padding: 16px 24px;
+    background-color: inherit;
+    border: 1px solid @grayishWhite;
+    border-radius: 16px;
+    cursor: pointer;
+
+    &:hover{
+        transition: 0.3s;
+        border-color: @mainOrange;
+        outline: none;
+        box-shadow: none;
+    }
+
+
+    &-footer{
+        display: none;
+    }
+
+    input{
+        .text(400,16px,125%,@white);
+        cursor: inherit;
+    }
+}
+
+
+::ng-deep .ant-picker-status-error.ant-picker, .ant-picker-status-error.ant-picker:hover{
+    background-color: inherit;
+}
+
