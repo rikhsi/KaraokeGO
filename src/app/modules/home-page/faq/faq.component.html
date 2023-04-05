@@ -1,1 +1,27 @@
-<p>faq works!</p>
+<div class="container faq__bg">
+    <div nz-row [nzGutter]="[0,{xl:24,lg:24,md:24,sm:12,xs:12}]">
+        <div nz-col nzSpan="24">
+            <h2>FAQ</h2>
+        </div>
+        <div nz-col nzSpan="24">
+            <div class="faq__container" *ngFor="let data of faqs">
+                <div nz-row nzJustify="space-between" nzAlign="middle" [nzGutter]="[40]" style="flex-wrap: nowrap;">
+                    <div nz-col>
+                        <h1 class="faq__title">{{data.question}}</h1>
+                    </div>
+                    <div nz-col>
+                        <button class="faq__button" [ngClass]="checkActiveFaqs(data.id) ? 'faq__button-active' : ''" (click)="toggle(data.id)">
+                            <span nz-icon [nzType]="checkActiveFaqs(data.id) ? 'minus' : 'plus'" nzTheme="outline"></span>
+                        </button>
+                    </div>
+                </div>
+                <ng-container *ngIf="checkActiveFaqs(data.id)">
+                    <h2 class="faq__answer" [@fadeInOut]>
+                        {{data.answer}}
+                    </h2>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
+

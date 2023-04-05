@@ -17,6 +17,8 @@ import { BoonComponent } from './boon/boon.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzFormModule } from 'ng-zorro-antd/form';
 
 //translateModule
 import { TranslateModule } from '@ngx-translate/core';
@@ -24,7 +26,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 //formsModule
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NzFormModule } from 'ng-zorro-antd/form';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import { NzFormModule } from 'ng-zorro-antd/form';
     NzDatePickerModule,
     FormsModule,
     ReactiveFormsModule,
-    NzFormModule
+    NzFormModule,
+    NzIconModule
   ]
 })
 export class HomePageModule { }
