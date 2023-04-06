@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./advantages.component.less']
 })
 export class AdvantagesComponent {
-
+  imageUrl: string = '../../../../assets/img/1447.png'
 }

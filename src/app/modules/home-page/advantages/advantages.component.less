@@ -1,0 +1,39 @@
+@import '../../../styles/colors.less';
+@import '../../../styles/fonts.less';
+
+.adv{
+    &__bg{
+        background-color: @grayishBlue;
+    }
+    &__card{
+        width: 320px;
+        height: 616px;
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 16px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        border-radius: 240px;
+    }
+    &__carousel{
+        @media (max-width:767px) {
+            flex-wrap: nowrap;
+            overflow: scroll;
+        }
+    }
+}
+
+.card{
+    &__title{
+        text-align: center;
+        .text(700,24px,125%,@white);
+    }
+    &__text{
+        text-align: center;
+        .text(400,16px,125%,@white);
+    }
+}
