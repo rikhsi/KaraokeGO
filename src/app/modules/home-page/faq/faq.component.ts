@@ -37,7 +37,6 @@ export class FaqComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    
   }
 
   toggle(id: number):void {

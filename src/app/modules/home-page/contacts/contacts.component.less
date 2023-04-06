@@ -1,15 +1,81 @@
+
 @import '../../../styles/colors.less';
 @import '../../../styles/fonts.less';
+
+
+.boxes{
+    &__left{
+        @media (max-width:1199px) {
+            order: 2;
+        }
+    }
+    &__right{
+        @media (max-width:1199px) {
+            order: 1;
+        }
+    }
+}
 
 .contacts{
     &__bg{
         background-color: @mainBlack;
     }
-    &__info{
-        min-height: 100%;
-        flex: 1 1 auto;
+    &__title{
+        color: @white;
+    }
+    &__location{
+        max-width: 400px;
+        .text(500,36px,125%,@white);
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+        }
+    }
+    &__list{
+        .text(500,24px,125%,@white);
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.buttons{
+    &__box{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 14px;
+    }
+    &__button{
+        padding: 24px;
+        border: 2px solid @mainYellow;
+        background-color: inherit;
+        border-radius: 24px;
+        .text(500,20px,125%,@mainYellow);
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.map{
+    &__container{
+        width: 100%;
+        height: 100%;
+        border-radius: 32px;
+        overflow: hidden;
+
+        @media (max-width: 1199px) {
+            height: 600px;
+        }
+
+        @media (max-width: 767px) {
+            height: 350px;
+        }
+
+        img{
+            object-fit: cover;
+        }
     }
 }

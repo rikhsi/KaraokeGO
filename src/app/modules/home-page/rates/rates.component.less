@@ -1,0 +1,90 @@
+@import '../../../styles/colors.less';
+@import '../../../styles/fonts.less';
+
+.rates{
+    &__bg{
+        background-color: @mainOrange;
+    }
+    &__header{
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid @white;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        @media (max-width:1199px) {
+            gap: 70px;
+        }
+
+        @media (max-width:767px) {
+            gap: 16px;
+        }
+    }
+    &__button{
+        padding: 24px 48px;
+        background: @mainYellow;
+        border: none;
+        border-radius: 24px;
+        .text(500,20px,125%,@mainBlack);
+
+        @media (max-width:767px) {
+            width: 100%;
+        }
+    }
+}
+
+.header{
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media (max-width: 767px) {
+            gap: 8px;
+        }
+    }
+}
+
+.list{
+    &__title{
+        .text(700,48px,120%,@white);
+
+        @media (max-width: 767px) {
+            font-size: 36px;
+        }
+    }
+    &__price{
+        .text(700,32px,120%,@mainYellow);
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+        }
+    }
+}
+
+.body{
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .text(700,24px,125%,@white);
+
+        @media (max-width:767px) {
+            font-size: 16px;
+        }
+        
+    }
+}
+
+.description{
+    .text(400,16px,125%,@white);
+
+    @media (max-width:767px) {
+        font-size: 14px;
+    }
+}
+
+

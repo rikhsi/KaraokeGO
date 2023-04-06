@@ -38,7 +38,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     RatesComponent,
     FaqComponent,
-    BoonComponent
+    BoonComponent,
   ],
   imports: [
     CommonModule,
