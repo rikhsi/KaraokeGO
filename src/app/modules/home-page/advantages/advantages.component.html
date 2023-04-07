@@ -1,15 +1,14 @@
 <div class="container adv__bg">
-    <div nz-row [nzGutter]="[60]">
-        <h2 nz-col nzXs="24">Преимущества</h2>
-        <div nz-col nzXs="24">
+    <div nz-row [nzGutter]="[60,36]">
+        <h2 nz-col>Преимущества</h2>
+        <div nz-col class="adv__box">
             <div nz-row [nzGutter]="[16]" class="adv__carousel">
-                <div nz-col *ngFor="let data of [1,2,3]">
-                    <div class="adv__card" [style.background-image]="'url(' + imageUrl + ')'">
-                        <h1 class="card__title">Мобильность</h1>
-                        <h3 class="card__text">
-                            Мобильность
-                            Привезем и установим караоке систему в любую точку Европы.
-                        </h3>
+                <div nz-col *ngFor="let card of cards" class="animate">
+                    <div class="adv__card" [ngStyle]="{'background-image': 'url(' + card.bg + ')'}">
+                        <ng-container>
+                            <h1 class="card__title">{{card.title}}</h1>
+                            <h3 class="card__text">{{card.text}}</h3>
+                        </ng-container>
                     </div>
                 </div>
             </div>

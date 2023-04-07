@@ -28,6 +28,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
+//swiper
+import { SwiperModule } from 'swiper/angular';
+
 @NgModule({
   declarations: [
     HomePageComponent,
@@ -49,7 +52,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     NzFormModule,
-    NzIconModule
+    NzIconModule,
+    SwiperModule
   ]
 })
 export class HomePageModule { }

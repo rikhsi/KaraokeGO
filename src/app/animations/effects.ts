@@ -1,4 +1,4 @@
-import { trigger, style, transition, animate} from '@angular/animations';
+import { trigger, style, transition, animate, keyframes, state} from '@angular/animations';
 
 export const fadeInOut = trigger('fadeInOut', [
     transition(':enter', [
