@@ -19,6 +19,8 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzImageModule } from 'ng-zorro-antd/image';
 
 //translateModule
 import { TranslateModule } from '@ngx-translate/core';
@@ -53,7 +55,9 @@ import { SwiperModule } from 'swiper/angular';
     ReactiveFormsModule,
     NzFormModule,
     NzIconModule,
-    SwiperModule
+    SwiperModule,
+    NzImageModule,
+    NzDropDownModule
   ]
 })
 export class HomePageModule { }
