@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { timer } from 'rxjs';
 import { Pulse } from 'src/app/animations/buttons';
 import { NavButton } from 'src/app/models/nav';
+import { mainImages } from 'src/assets/config/images';
+import SwiperCore, { EffectFade, Autoplay, SwiperOptions} from 'swiper';
 
 @Component({
   selector: 'go-main',
@@ -11,46 +14,79 @@ import { NavButton } from 'src/app/models/nav';
 })
 export class MainComponent implements OnInit {
   fallback: string = '../../../../assets/img/fallback.jpg';
+  isModalVisible = false;
   isAnimate:boolean = true;
-  currentLang: string = 'RU';
-  buttonsList: NavButton[] = [];
-  options = [
+  currentLang: string = '';
+  buttonsList: NavButton[] = [
     {
-      lang: 'RU'
+      id: 1,
+      name: 'ЦЕНЫ'
     },
     {
-      lang: 'UZ'
+      id: 2,
+      name: 'КТО МЫ'
     },
     {
-      lang: 'EN'
+      id: 3,
+      name: 'FAQ'
+    },
+    {
+      id: 4,
+      name: 'КОНТАКТЫ'
+    }    
+  ];
+  options: {lang: string}[] = [
+    {
+      lang: 'ru'
+    },
+    {
+      lang: 'uz'
+    },
+    {
+      lang: 'en'
     }
   ]
+  config: SwiperOptions = {
+    slidesPerView: 'auto',
+    effect: 'fade',
+    grabCursor: true,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false
+    },
+    loop: true
+    
+  }
+  photos: string[] = [];
 
-  constructor(){}
+  constructor(private translateService: TranslateService){
+    SwiperCore.use([EffectFade,Autoplay]);
+  }
 
   ngOnInit(): void {
     timer(200).subscribe(() => this.isAnimate = false);
-    this.buttonsList = [
-      {
-        id: 1,
-        name: 'ЦЕНЫ'
-      },
-      {
-        id: 2,
-        name: 'КТО МЫ'
-      },
-      {
-        id: 3,
-        name: 'FAQ'
-      },
-      {
-        id: 4,
-        name: 'КОНТАКТЫ'
-      }    
-    ]
+    this.currentLang = this.translateService.getDefaultLang();
+    this.getGallery();
   }
 
   changeLang(lang: string):void {
+    this.translateService.use(lang);
     this.currentLang = lang;
+  }
+
+  getGallery(): void {
+    this.photos = mainImages;
+  }
+
+  showModal(): void {
+    this.isModalVisible = !this.isModalVisible;
+  }
+
+  activeLogo():void{
+    timer(200).subscribe(() => this.isModalVisible = false);
+  }
+
+  openLink():void{
+    timer(200).subscribe(() => window.open('', '_blank'))
   }
 }

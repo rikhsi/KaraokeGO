@@ -21,6 +21,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzImageModule } from 'ng-zorro-antd/image';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 
 //translateModule
 import { TranslateModule } from '@ngx-translate/core';
@@ -57,7 +58,8 @@ import { SwiperModule } from 'swiper/angular';
     NzIconModule,
     SwiperModule,
     NzImageModule,
-    NzDropDownModule
+    NzDropDownModule,
+    NzModalModule
   ]
 })
 export class HomePageModule { }

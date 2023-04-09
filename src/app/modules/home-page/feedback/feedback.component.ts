@@ -15,24 +15,24 @@ export class FeedbackComponent implements OnInit{
   formInputs: Inputs = {
     inputs: [
       {
-        title: 'Как к вам обращаться',
-        placeholder: 'Имя',
+        title: 'feedback.inputs.first.title',
+        placeholder: 'feedback.inputs.first.placeholder',
         controlName: 'name'
       },
       {
-        title: 'Email',
-        placeholder: 'Email',
+        title: 'feedback.inputs.second.title',
+        placeholder: 'feedback.inputs.second.placeholder',
         controlName: 'mail'
       }
     ],
     calendar: {
-      title: 'Дата',
-      placeholder: 'Выберите дату проведения мероприятия',
+      title: 'feedback.inputs.third.title',
+      placeholder: 'feedback.inputs.third.placeholder',
       controlName: 'calendar'
     },
     area: {
-      title: 'Сообщение',
-      placeholder: 'Задайте вопрос или уточните детати будующего заказа',
+      title: 'feedback.inputs.fourth.title',
+      placeholder: 'feedback.inputs.fourth.placeholder',
       controlName: 'message'
     }
   }

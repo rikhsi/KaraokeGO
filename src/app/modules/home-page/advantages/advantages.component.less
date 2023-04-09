@@ -69,7 +69,9 @@
     }
 }
 
+
 .card{
+    position: relative;
     &__title{
         text-align: center;
         .text(700,24px,125%,@white);
@@ -89,9 +91,14 @@
     }
 }
 
-.animate:hover{
-    flex-basis: 60%;
-    animation: pulse 1s 1;
+
+.animate{
+    transition: 0.3s;
+    &:hover{
+        transition: 0.3s;
+        flex-basis: 60%;
+        animation: pulse 1s 1;
+    }
 }
 
 @keyframes pulse {

@@ -1,3 +1,31 @@
 {
-    "hello": "Hi"
+    "main" : {
+        "title": "",
+        "text": "",
+        "button": ""
+    },
+    "feedback": {
+        "title": "",
+        "text": "",
+        "inputs": {
+            "first" : {
+                "title": "",
+                "placeholder": ""
+            },
+            "second" : {
+                "title": "",
+                "placeholder": ""
+            },
+            "third" : {
+                "title": "",
+                "placeholder": ""
+            },
+            "fourth" : {
+                "title": "",
+                "placeholder": ""
+            }
+        },
+        "button": "",
+        "confirm": ""
+    }
 }

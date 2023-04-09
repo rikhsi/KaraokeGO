@@ -134,8 +134,12 @@
 
 .logo{
     &__title{
-        display: flex;
-        align-items: center;
+        background: inherit;
+        border: none;
+
+        &:active{
+            animation: buttonPulse 0.2s 1;
+        }
     }
     &__button{
         margin-right: 0 !important;
@@ -175,6 +179,11 @@
             font-size: 14px !important;
             color: @grayishWhite !important;
         }
+
+        @media (max-width:767px) {
+            background: inherit;
+            color: @white;
+        }
     }
     &__hider{
         display: none;
@@ -184,6 +193,53 @@
         }
     }
 }
+
+.modal{
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    &__list{
+        .text(500,16px,125%,@white);
+        text-align: center;
+
+        li a:hover {
+            color: @mainYellow !important;
+        }
+    }
+    &__button{
+        width: 100%;
+        padding: 24px;
+        border: 2px solid @mainYellow;
+        background-color: inherit;
+        border-radius: 24px;
+        .text(500,16px,125%,@mainYellow);
+
+        &:hover{
+            transition: 0.3s;
+            background-color: @mainYellow;
+            color: @mainBlack;
+        }
+
+        &:active{
+            animation:buttonPulse 0.3s 1 ;
+        }
+
+    }
+}
+
+[nz-menu-item]{
+    text-transform: uppercase;
+    .text(400,20px,125%,@mainBlack); 
+    
+    &:hover{
+        background: @mainYellow;
+    }
+}
+
+
 
 [nz-image]{
     pointer-events: none;

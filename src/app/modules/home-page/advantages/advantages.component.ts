@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from 'src/app/models/adv';
+import { advantagesImages } from 'src/assets/config/images';
 
 @Component({
   selector: 'go-advantages',
@@ -7,37 +8,33 @@ import { Card } from 'src/app/models/adv';
   styleUrls: ['./advantages.component.less']
 })
 export class AdvantagesComponent implements OnInit{
-  active = new Set<number>();
   cards:Card[] = [
     {
       id: 1,
-      bg: '../../../../assets/img/1447.png',
-      title: 'Мобильность',
-      text: ' Мобильность Привезем и установим караоке систему в любую точку Европы.',
+      bg: '',
+      title: 'advantages.cards.first.title',
+      text: 'advantages.cards.first.text',
     },
     {
       id: 2,
-      bg: '../../../../assets/img/1447.png',
-      title: 'Большой выбор',
-      text: ' Более 100 000 зарубежных и отечественных песен на любой вкус.',
+      bg: '',
+      title: 'advantages.cards.second.title',
+      text: 'advantages.cards.second.text',
     },
     {
       id: 3,
-      bg: '../../../../assets/img/1447.png',
-      title: 'Качество',
-      text: ' Звукорежиссер установит технику и проконтролирует ее работу.',
+      bg: '',
+      title: 'advantages.cards.third.title',
+      text: 'advantages.cards.third.text',
     }
   ]
 
   constructor(){}
 
-  ngOnInit(): void {}
-
-  animateOn(id: number): void {
-    this.active.add(id)
-  }
-
-  animateOff(id:number): void {
-    this.active.delete(id);
+  ngOnInit(): void {
+    const photos: string[] = advantagesImages;
+    this.cards.forEach((data,index) => {
+      data.bg = photos[index]
+    })
   }
 }
