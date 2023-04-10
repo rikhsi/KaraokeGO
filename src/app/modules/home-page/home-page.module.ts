@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { RatesComponent } from './rates/rates.component';
 import { FaqComponent } from './faq/faq.component';
 import { BoonComponent } from './boon/boon.component';
+import { PlayerComponent } from './player/player.component';
 
 //ngZorroModules
 import { NzGridModule } from 'ng-zorro-antd/grid';
@@ -34,6 +35,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //swiper
 import { SwiperModule } from 'swiper/angular';
 
+//youtube
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
+import { SharedModule } from 'src/app/shared/shared.module';
+
 @NgModule({
   declarations: [
     HomePageComponent,
@@ -45,6 +50,7 @@ import { SwiperModule } from 'swiper/angular';
     RatesComponent,
     FaqComponent,
     BoonComponent,
+    PlayerComponent,
   ],
   imports: [
     CommonModule,
@@ -59,7 +65,9 @@ import { SwiperModule } from 'swiper/angular';
     SwiperModule,
     NzImageModule,
     NzDropDownModule,
-    NzModalModule
+    NzModalModule,
+    NgxYoutubePlayerModule,
+    SharedModule
   ]
 })
 export class HomePageModule { }

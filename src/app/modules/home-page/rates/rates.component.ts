@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./rates.component.less']
 })
 export class RatesComponent{
+  isOfferModal: boolean = false;
   cards = [
     {
       name: "rates.cards.first.name",
@@ -25,5 +26,9 @@ export class RatesComponent{
       amount: "rates.cards.second.amount",
       text: "rates.cards.second.text"
     }
-  ]
+  ];
+
+  showOfferModal(): void {
+    this.isOfferModal = !this.isOfferModal;
+  }
 }

@@ -13,6 +13,7 @@ import SwiperCore, { EffectFade, Autoplay, SwiperOptions} from 'swiper';
   animations: [Pulse]
 })
 export class MainComponent implements OnInit {
+  isOfferModal: boolean = false;
   fallback: string = '../../../../assets/img/fallback.jpg';
   isModalVisible = false;
   isAnimate:boolean = true;
@@ -88,5 +89,9 @@ export class MainComponent implements OnInit {
 
   openLink():void{
     timer(200).subscribe(() => window.open('', '_blank'))
+  }
+
+  showOfferModal(): void {
+    this.isOfferModal = !this.isOfferModal;
   }
 }

@@ -25,7 +25,7 @@
                         </p>
                     </div>
                     <div nz-col nzSpan="24">
-                        <button class="rates__button">{{'rates.button' | translate}}</button>
+                        <button class="rates__button" (click)="showOfferModal()">{{'rates.button' | translate}}</button>
                     </div>
                 </div>
             </ul>
@@ -33,5 +33,5 @@
     </div>
 </div>
 
-
+<go-modal [isVisible]="isOfferModal" (isClosed)="showOfferModal()"></go-modal>
 

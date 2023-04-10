@@ -28,7 +28,7 @@
                 </div>
                 <div nz-col nzSpan="24">
                     <div class="main__button">
-                        <button [@pulse]="isAnimate ? 'pulse' : 'normal'">{{'main.button' | translate}}</button>
+                        <button [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="showOfferModal()">{{'main.button' | translate}}</button>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
     </ul>
 </nz-dropdown-menu>
 
-<nz-modal [(nzVisible)]="isModalVisible" nzTitle="The first Modal" (nzOnCancel)="showModal()" [nzTitle]="''" [nzClosable]="false" [nzFooter]="null">
+<nz-modal [(nzVisible)]="isModalVisible" (nzOnCancel)="showModal()" [nzTitle]="''" [nzClosable]="false" [nzFooter]="null">
     <ng-container *nzModalContent>
         <div nz-row [nzGutter]="[0,64]">
             <div nz-col nzSpan="24">
@@ -118,7 +118,7 @@
             <ul nz-col nzSpan="24" class="modal__list">
                 <li>
                     ТЕЛЕФОН:
-                     <a href="tel:+998990031497">+998990031497</a>
+                    <a href="tel:+998990031497">+998990031497</a>
                 </li>
                 <li>
                     EMAIL: 
@@ -129,7 +129,7 @@
                 <li>
                     БРОНЬ:
                     <a href="mailto: INFO@BERTOLUCCI-SOUND.COM">
-                         BOOKING@BERTOLUCCI-SOUND.COM
+                        BOOKING@BERTOLUCCI-SOUND.COM
                     </a>
                 </li>
             </ul>
@@ -146,3 +146,5 @@
         </div>
     </ng-container>
 </nz-modal>
+
+<go-modal [isVisible]="isOfferModal" (isClosed)="showOfferModal()"></go-modal>

@@ -1,0 +1,134 @@
+@import '../../styles/colors.less';
+@import '../../styles/fonts.less';
+
+
+.modal{
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @media (max-width:767px) {
+            gap: 16px;
+        }
+    }
+    &__container{
+        padding: 36px;
+    }
+    &__close{
+        display: flex;
+        padding: 0;
+        border: none;
+        background: inherit;
+        color: @white;
+        font-size: 20px;
+        
+        &:hover{
+            color: @mainOrange;
+        }
+
+        &:active{
+            animation:buttonPulse 0.3s 1;
+        }
+    }
+}
+
+.form{
+    &__label{
+        .text(400,16px,125%,@white);
+    }
+    &__area{
+        height: 120px;
+    }
+    &__button{
+        width: 100%;
+        padding: 24px;
+        background: #FFD54B;
+        border: none;
+        border-radius: 24px;
+
+        .text(500,20px,125%,@mainBlack);
+
+        &:hover{
+            transition: 0.3s;
+            background-color: @white;
+        }
+
+        &:active{
+            animation:buttonPulse 0.3s 1 ;
+        }
+    }
+    &__selects{
+        padding-top: 16px;
+        display: flex;
+        gap: 32px;
+    }
+    &__amount{
+        .text(400,16px,125%,@mainYellow);
+    }
+}
+
+.selects{
+    &__button{
+        padding: 8px 16px;
+        background: inherit;
+        border: 1px solid @grayishWhite;
+        border-radius: 24px;
+        .text(400,16px,125%,@grayishWhite);
+    }
+}
+
+[nz-input]{
+    padding: 16px 24px;
+    background-color: inherit !important;
+    border: 1px solid @grayishWhite;
+    border-radius: 16px;
+    transition: 0.3s;
+    resize: none;
+    .text(400,16px,125%,@white);
+
+    &::placeholder{
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: @grayishWhite;
+    }
+
+    &:hover{
+        transition: 0.3s;
+        border-color: @mainOrange;
+        outline: none;
+        box-shadow: none;
+    }
+
+    &:focus{
+        transition: 0.3s;
+        border-color: inherit;
+    }
+}
+
+::ng-deep .ant-radio-button-wrapper{
+    width: auto;
+    height: auto;
+    padding: 8px 16px;
+    margin-right: 16px;
+    background: inherit;
+    border: 1px solid @grayishWhite;
+    border-radius: 24px !important;
+    overflow: hidden;
+    .text(400,16px,125%,@grayishWhite);
+
+    &:hover{
+        color: @mainYellow;
+    }
+}
+
+::ng-deep .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+    background-color: @mainOrange !important;
+    border: none !important;
+}
+
+::ng-deep .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):active{
+    background-color: @mainOrange !important;
+    border: none !important;
+}    
