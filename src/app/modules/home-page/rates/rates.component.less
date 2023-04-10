@@ -1,7 +1,16 @@
 @import '../../../styles/colors.less';
 @import '../../../styles/fonts.less';
 
+
 .rates{
+    &__container{
+        display: flex;
+        gap: 16px;
+    
+        @media (max-width: 1199px) {
+            flex-direction: column;
+        }
+    }
     &__bg{
         background-color: @mainOrange;
     }

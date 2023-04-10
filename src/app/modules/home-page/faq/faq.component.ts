@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
+import { minus, plus } from 'src/app/animations/buttons';
 import { fadeInOut } from 'src/app/animations/effects';
 import { Faq } from 'src/app/models/faq';
 
@@ -6,48 +8,60 @@ import { Faq } from 'src/app/models/faq';
   selector: 'go-faq',
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.less'],
-  animations: [fadeInOut]
+  animations: [fadeInOut,plus,minus]
 })
 export class FaqComponent implements OnInit {
   isActive: boolean = false;
+  isDisabled: boolean = false;
   activeFaqs = new Set<number>();
-  faqs: Faq[] = [
+  faqs:Faq[] = [
     {
-      id: 1,
-      question: 'В каком состоянии находится оборудование для караоке, которое вы предлагаете в аренду?',
-      answer: 'Мы предлагаем акустические системы от ведущих производителей, таких как Bose, Electro Voice, Yamaha, которые обеспечивают кристально чистый и мощный звук на любой вечеринке.'
+      question: 'faq.cards.first.question',
+      answer: 'faq.cards.first.answer'
     },
     {
-      id: 2,
-      question: 'Как долго длится аренда оборудования для караоке?',
-      answer: 'Мы предлагаем акустические системы от ведущих производителей, таких как Bose, Electro Voice, Yamaha, которые обеспечивают кристально чистый и мощный звук на любой вечеринке.'
+      question: 'faq.cards.second.question',
+      answer: 'faq.cards.second.answer'
     },
     {
-      id: 3,
-      question: 'Как долго длится аренда оборудования для караоке?',
-      answer: 'Мы предлагаем акустические системы от ведущих производителей, таких как Bose, Electro Voice, Yamaha, которые обеспечивают кристально чистый и мощный звук на любой вечеринке.'
+      question: 'faq.cards.third.question',
+      answer: 'faq.cards.third.answer'
     },
     {
-      id: 4,
-      question: 'Как долго длится аренда оборудования для караоке?',
-      answer: 'Мы предлагаем акустические системы от ведущих производителей, таких как Bose, Electro Voice, Yamaha, которые обеспечивают кристально чистый и мощный звук на любой вечеринке.'
+      question: 'faq.cards.fourth.question',
+      answer: 'faq.cards.fourth.answer'
+    },
+    {
+      question: 'faq.cards.five.question',
+      answer: 'faq.cards.five.answer'
+    },
+    {
+      question: 'faq.cards.six.question',
+      answer: 'faq.cards.six.answer'
+    },
+    {
+      question: 'faq.cards.seven.question',
+      answer: 'faq.cards.seven.answer'
     }
-  ]
+  ];
 
   constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   toggle(id: number):void {
+    this.isDisabled = !this.isDisabled;
     if (this.activeFaqs.has(id)) {
       this.activeFaqs.delete(id);
     } else {
       this.activeFaqs.add(id);
     }
+    timer(400).subscribe(() => {
+      this.isDisabled = !this.isDisabled;
+    })
   }
 
   checkActiveFaqs(id: number):boolean {
-    return this.activeFaqs.has(id)
+      return this.activeFaqs.has(id);
   }
 }

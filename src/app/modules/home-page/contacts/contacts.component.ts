@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
+import { contacts, links } from 'src/assets/config/contacts';
 
 @Component({
   selector: 'go-contacts',
@@ -6,12 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.less']
 })
 export class ContactsComponent implements OnInit{
+  fallback: string = '../../../../assets/img/fallback.jpg';
   url!: string;
+  contactsList!: {phone: string , mail: string, book: string};
+  linksList: {whatsApp: string, instagram: string} = links;
 
   constructor() {}
 
   ngOnInit(): void {
     this.get();
+    this.contactsList = contacts;
+  }
+
+  openLink(link:string):void{
+    timer(200).subscribe(() => window.open(link, '_blank'))
   }
 
   get() {

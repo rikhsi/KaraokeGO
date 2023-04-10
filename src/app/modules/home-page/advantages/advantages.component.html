@@ -3,22 +3,31 @@
         <h2 nz-col>Преимущества</h2>
         <div nz-col class="adv__box">
             <div nz-row [nzGutter]="[16]" class="adv__carousel">
-                <div nz-col  class="animate">
-                    <div class="adv__card" [ngStyle]="{'background-image': 'url(../../../../assets/img/' + cards[0].bg + ')'}">
+                <div nz-col class="animate">
+                    <div class="adv__card">
+                        <div class="card__image">
+                            <img [src]="'../../../../assets/img/advantages/'+ cards[0].bg" alt="">
+                        </div>
                         <h1 class="card__title">{{cards[0].title | translate}}</h1>
                         <h3 class="card__text">{{cards[0].text | translate}}</h3>
                     </div>
                 </div>
                 <div nz-col  class="animate">
-                    <div class="adv__card" [ngStyle]="{'background-image': 'url(../../../../assets/img/' + cards[1].bg + ')'}">
+                    <div class="adv__card">
+                        <div class="card__image">
+                            <img [src]="'../../../../assets/img/advantages/'+ cards[1].bg" alt="">
+                        </div>
                         <h1 class="card__title">{{cards[1].title | translate}}</h1>
                         <h3 class="card__text">{{cards[1].text | translate}}</h3>
                     </div>
                 </div>
                 <div nz-col  class="animate">
-                    <div class="adv__card" [ngStyle]="{'background-image': 'url(../../../../assets/img/' + cards[2].bg + ')'}">
-                        <h1 class="card__title hidden">{{cards[2].title | translate}}</h1>
-                        <h3 class="card__text hidden">{{cards[2].text | translate}}</h3>
+                    <div class="adv__card">
+                        <div class="card__image">
+                            <img [src]="'../../../../assets/img/advantages/'+ cards[2].bg" alt="">
+                        </div>
+                        <h1 class="card__title">{{cards[2].title | translate}}</h1>
+                        <h3 class="card__text">{{cards[2].text | translate}}</h3>
                     </div>
                 </div>
             </div>

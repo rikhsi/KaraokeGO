@@ -4,20 +4,25 @@
             <h2>FAQ</h2>
         </div>
         <div nz-col nzSpan="24">
-            <div class="faq__container" *ngFor="let data of faqs">
+            <div class="faq__container" *ngFor="let faq of faqs; let i = index">
                 <div nz-row nzJustify="space-between" nzAlign="middle" [nzGutter]="[40]" style="flex-wrap: nowrap;">
                     <div nz-col>
-                        <h1 class="faq__title">{{data.question}}</h1>
+                        <h1 class="faq__title">{{faq.question | translate}}</h1>
                     </div>
                     <div nz-col>
-                        <button class="faq__button" [ngClass]="checkActiveFaqs(data.id) ? 'faq__button-active' : ''" (click)="toggle(data.id)">
-                            <span nz-icon [nzType]="checkActiveFaqs(data.id) ? 'minus' : 'plus'" nzTheme="outline"></span>
+                        <button class="faq__button" [ngClass]="checkActiveFaqs(i) ? 'faq__button-active' : ''" (click)="toggle(i)" [disabled]="isDisabled">
+                            <ng-container *ngIf="!checkActiveFaqs(i)">
+                                <span nz-icon nzType="plus" nzTheme="outline" [@plus]></span>
+                            </ng-container>
+                            <ng-container *ngIf="checkActiveFaqs(i)">
+                                <span nz-icon nzType="minus" nzTheme="outline" [@minus]></span>
+                            </ng-container>
                         </button>
                     </div>
                 </div>
-                <ng-container *ngIf="checkActiveFaqs(data.id)">
+                <ng-container *ngIf="checkActiveFaqs(i)">
                     <h2 class="faq__answer" [@fadeInOut]>
-                        {{data.answer}}
+                        {{faq.answer | translate}}
                     </h2>
                 </ng-container>
             </div>

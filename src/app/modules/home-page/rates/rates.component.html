@@ -1,40 +1,37 @@
-<div nz-row [nzGutter]="[16,16]">
-    <div nz-col nzXs="24" nzXl="12" *ngFor="let data of [1,2]">
-        <div class="container rates__bg">
-            <div class="rates__header">
-                <ul class="header__list">
-                    <li>
-                        <h1 class="list__title">Стандарт</h1>
-                    </li>
-                    <li>
-                        <h3 class="list__price">от 7500 czk</h3>
-                    </li>
-                </ul>
-            </div>
-            <div class="rates__body">
-                <ul class="body__info">
-                    <li>6 часов</li>
-                    <li>Звукорежиссер</li>
-                    <li>Звук 2 Квт</li>
-                    <li class="description">до 50 человек</li>
-                </ul>
-                <ul class="rates__footer">
-                    <div nz-row [nzGutter]="[0,16]">
-                        <div nz-col nzSpan="24">
-                            <p class="description">
-                                Тариф "Стандарт" - это отличное решение для небольших мероприятий, таких как юбилеи, дни рождения, небольшие корпоративные мероприятия 
-                                и т.д. Стоимость тарифа представляет собой бюджетное решение 
-                                для проведения мероприятий с ограниченным бюджетом, при этом 
-                                не уступая в качестве звучания.
-                            </p>
-                        </div>
-                        <div nz-col nzSpan="24">
-                            <button class="rates__button">Заказать</button>
-                        </div>
+<div class="rates__container">
+    <div class="container rates__bg" *ngFor="let card of cards">
+        <div class="rates__header">
+            <ul class="header__list">
+                <li>
+                    <h1 class="list__title">{{card.name | translate}}</h1>
+                </li>
+                <li>
+                    <h3 class="list__price">{{card.price | translate}}</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="rates__body">
+            <ul class="body__info">
+                <li>{{card.time | translate}}</li>
+                <li>{{card.person | translate}}</li>
+                <li>{{card.volume | translate}}</li>
+                <li class="description">{{card.amount | translate}}</li>
+            </ul>
+            <ul class="rates__footer">
+                <div nz-row [nzGutter]="[0,16]">
+                    <div nz-col nzSpan="24">
+                        <p class="description">
+                            {{card.text | translate}}
+                        </p>
                     </div>
-                </ul>
-            </div>
+                    <div nz-col nzSpan="24">
+                        <button class="rates__button">{{'rates.button' | translate}}</button>
+                    </div>
+                </div>
+            </ul>
         </div>
     </div>
 </div>
+
+
 
