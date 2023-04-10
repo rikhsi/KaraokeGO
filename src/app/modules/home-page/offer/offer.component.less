@@ -1,0 +1,73 @@
+@import '../../../styles/colors.less';
+@import '../../../styles/fonts.less';
+
+.offer{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        background-color: @grayishBlue;
+
+        @media (max-width:767px) {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+    &__box{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        @media (max-width:767px) {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__text{
+        .text(400,16px,125%,@black);
+
+        @media (max-width:767px) {
+            text-align: center;
+        }
+    }
+    &__button{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 0;
+        background: inherit;
+        border: none;
+        .text(400,16px,125%,@black);
+        text-decoration: underline;
+        transition: 0.3s;
+
+        &:hover{
+            transition: 0.3s;
+            color: @mainOrange;
+        }
+
+        &:active{
+            animation:buttonPulse 0.3s 1 ;
+        }
+
+        @media (max-width:767px) {
+            color: @mainOrange;
+
+            svg{
+                display: none;
+            }
+        }
+    }
+}
+
+.line{
+    @media (max-width:767px) {
+        display: none;
+    }
+}

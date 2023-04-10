@@ -38,6 +38,7 @@ import { SwiperModule } from 'swiper/angular';
 //youtube
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { OfferComponent } from './offer/offer.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FaqComponent,
     BoonComponent,
     PlayerComponent,
+    OfferComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,148 @@
+@import '../../styles/colors.less';
+@import '../../styles/fonts.less';
+
+.offer{
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 24px;
+    }
+    &__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        justify-content: space-between;
+        flex: 1 1 auto;
+        min-height: 100%;
+        padding: 48px;
+        background: @mainBlack;
+        border-radius: 32px;
+
+        @media (max-width: 767px) {
+            padding: 24px;
+        }
+    }
+    &__logo{
+        border: none;
+        padding: 0;
+        background: inherit;
+        transition: 0.3s;
+
+        &:active{
+            svg path{
+                transition: 0.3s;
+                fill: @mainOrange;
+            }
+            animation:buttonPulse 0.3s 1 ;
+        }
+
+        &:hover svg path {
+            transition: 0.3s;
+            fill: @mainOrange;
+        }
+    }
+    &__social{
+        border: none;
+        padding: 0;
+        background: inherit;
+        transition: 0.3s;
+
+        &:active{
+            svg path{
+                transition: 0.3s;
+                fill: @mainOrange;
+            }
+
+            .telegram{
+                fill: @white !important;
+            }
+            animation:buttonPulse 0.3s 1 ;
+        }
+
+        &:hover{
+            svg path{
+                transition: 0.3s;
+                fill: @mainOrange;
+            }
+
+            .telegram{
+                fill: @white !important;
+            }
+        }
+    }
+    &__form{
+        width: 100%;
+        max-width: 620px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        
+        @media (max-width:767px) {
+            gap: 16px;
+        }
+    }
+}
+
+.form{
+    &__label{
+        text-align: center;
+        .text(400,16px,125%,@white);
+    }
+    &__area{
+        height: 120px;
+    }
+    &__button{
+        width: 100%;
+        padding: 24px;
+        background: @mainYellow;
+        border: none;
+        border-radius: 24px;
+
+        .text(500,20px,125%,@mainBlack);
+
+        &:hover{
+            transition: 0.3s;
+            background-color: @white;
+        }
+
+        &:active{
+            animation:buttonPulse 0.3s 1 ;
+        }
+    }
+}
+
+
+[nz-input]{
+    padding: 16px 24px;
+    background-color: inherit !important;
+    border: 1px solid @grayishWhite;
+    border-radius: 16px;
+    transition: 0.3s;
+    resize: none;
+    .text(400,16px,125%,@white);
+
+    &::placeholder{
+        text-align: center;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: @grayishWhite;
+    }
+
+    &:hover{
+        transition: 0.3s;
+        border-color: @mainOrange;
+        outline: none;
+        box-shadow: none;
+    }
+
+    &:focus{
+        transition: 0.3s;
+        border-color: inherit;
+    }
+}

@@ -4,6 +4,22 @@
         "text": "",
         "button": ""
     },
+    "advantages": {
+        "cards": {
+            "first": {
+                "title": "",
+                "text": ""
+            },
+            "second": {
+                "title": "",
+                "text": ""
+            },
+            "third": {
+                "title": "",
+                "text": ""
+            }
+        }
+    },
     "feedback": {
         "title": "",
         "text": "",
@@ -23,6 +39,17 @@
             "fourth" : {
                 "title": "",
                 "placeholder": ""
+            },
+            "five": {
+                "title": "",
+                "placeholder": ""
+            },
+            "six": {
+                "options": {
+                    "first": "",
+                    "second": ""
+                },
+                "info": ""
             }
         },
         "button": "",
@@ -95,6 +122,13 @@
         },
         "button": ""
     },
+    "contacts": {
+        "title": "",
+        "address": "",
+        "phone": "",
+        "mail": "",
+        "book": ""
+    },
     "faq": {
         "cards": {
             "first": {
@@ -126,5 +160,9 @@
                 "answer": ""
             }
         }
+    },
+    "offer": {
+        "text": "",
+        "connect": ""
     }
 }

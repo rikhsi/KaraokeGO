@@ -11,13 +11,14 @@ export class ContactsComponent implements OnInit{
   fallback: string = '../../../../assets/img/fallback.jpg';
   url!: string;
   contactsList!: {phone: string , mail: string, book: string};
-  linksList: {whatsApp: string, instagram: string} = links;
+  linksList!: {whatsApp: string, instagram: string};
 
   constructor() {}
 
   ngOnInit(): void {
     this.get();
     this.contactsList = contacts;
+    this.linksList = links;
   }
 
   openLink(link:string):void{

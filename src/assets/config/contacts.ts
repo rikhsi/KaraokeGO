@@ -8,3 +8,10 @@ export const links = {
     whatsApp: '',
     instagram: ''
 }
+
+export const SiliLinks = {
+    whatsApp: '',
+    instagram: '',
+    telegram: '',
+    be: ''
+}
