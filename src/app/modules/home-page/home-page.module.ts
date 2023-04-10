@@ -13,6 +13,7 @@ import { RatesComponent } from './rates/rates.component';
 import { FaqComponent } from './faq/faq.component';
 import { BoonComponent } from './boon/boon.component';
 import { PlayerComponent } from './player/player.component';
+import { OfferComponent } from './offer/offer.component';
 
 //ngZorroModules
 import { NzGridModule } from 'ng-zorro-antd/grid';
@@ -23,6 +24,7 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzImageModule } from 'ng-zorro-antd/image';
 import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzAnchorModule } from 'ng-zorro-antd/anchor';
 
 //translateModule
 import { TranslateModule } from '@ngx-translate/core';
@@ -35,10 +37,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //swiper
 import { SwiperModule } from 'swiper/angular';
 
-//youtube
-import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
+//shared
 import { SharedModule } from 'src/app/shared/shared.module';
-import { OfferComponent } from './offer/offer.component';
+
 
 @NgModule({
   declarations: [
@@ -63,12 +64,12 @@ import { OfferComponent } from './offer/offer.component';
     FormsModule,
     ReactiveFormsModule,
     NzFormModule,
+    NzAnchorModule,
     NzIconModule,
     SwiperModule,
     NzImageModule,
     NzDropDownModule,
     NzModalModule,
-    NgxYoutubePlayerModule,
     SharedModule
   ]
 })

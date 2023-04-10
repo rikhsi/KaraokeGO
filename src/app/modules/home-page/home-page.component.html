@@ -1,11 +1,11 @@
-<main nz-row [nzGutter]="[0,36]" class="home__main" [@fadeInOut]>
-    <section nz-col nzSpan="24" #main>
+<main nz-row [nzGutter]="[0,36]" class="home__main" [@fadeInOut] nzAnchor>
+    <section nz-col nzSpan="24" nzLink="main">
         <go-main></go-main>
     </section> 
-    <section nz-col nzSpan="24" #adv>
+    <section nz-col nzSpan="24">
         <go-advantages></go-advantages>
     </section>
-    <section nz-col nzSpan="24" #about>
+    <section nz-col nzSpan="24" id="about">
         <go-about></go-about>
     </section>
     <section nz-col nzSpan="24">
@@ -14,19 +14,19 @@
     <section nz-col nzSpan="24">
         <go-boon></go-boon>
     </section>
-    <section nz-col nzSpan="24" #rates>
+    <section nz-col nzSpan="24" id="rates">
         <go-rates></go-rates>
     </section>
-    <section nz-col nzSpan="24" #feedback>
+    <section nz-col nzSpan="24" nzLink="feedback">
         <go-feedback></go-feedback>
     </section>
-    <section nz-col nzSpan="24" #faq>
+    <section nz-col nzSpan="24" id="faq">
         <go-faq></go-faq>
     </section>
-    <section nz-col nzSpan="24" #contacts>
+    <section nz-col nzSpan="24" id="contacts">
         <go-contacts></go-contacts>
     </section>
-    <section nz-col nzSpan="24" #contacts>
+    <section nz-col nzSpan="24" nzLink="offer">
         <go-offer></go-offer>
     </section>
 </main>

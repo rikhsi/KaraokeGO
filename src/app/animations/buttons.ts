@@ -14,9 +14,9 @@ export const plus = trigger('plus', [
 export const minus = trigger('minus', [
     transition(':enter', [
         style({ display: 'none' }),
-        animate('400ms', style({ display: 'inline-block' }))
+        animate('400ms', style({ opacity: 1 }))
     ]),
     transition(':leave', [
-        animate('0ms', style({ display: 'none' }))
+        animate('0ms', style({ opacity: 0}))
     ])
 ]);

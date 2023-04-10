@@ -9,7 +9,7 @@
                     <ng-container [ngTemplateOutlet]="logo"></ng-container>
                 </div>
                 <div nz-col class="main__hider">
-                    <button class="nav__button logo__button" [@pulse]="isAnimate ? 'pulse' : 'normal'">{{buttonsList[0].name}}</button>
+                    <button class="nav__button logo__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(buttonsList[0].link)">{{buttonsList[0].name}}</button>
                 </div>
                 <div nz-col class="main__burger-hide">
                     <button class="main__burger" (click)="showModal()">
@@ -20,10 +20,10 @@
             <div nz-row [nzGutter]="[0,{xl:36,lg:36,md:36,sm:24,xs:24}]">
                 <div nz-col nzSpan="24">
                     <h1 class="main__title">
-                       {{'main.title' | translate}}
+                        {{'main.title' | translate}}
                     </h1>
                     <h3 class="main__text">
-                       {{'main.text' | translate}}
+                        {{'main.text' | translate}}
                     </h3>
                 </div>
                 <div nz-col nzSpan="24">
@@ -56,8 +56,8 @@
     <div class="container nav__container">
         <div nz-row>
             <div nz-col>
-                <button class="nav__button nav__hider" [@pulse]="isAnimate ? 'pulse' : 'normal'">{{buttonsList[0].name}}</button>
-                <button *ngFor="let button of buttonsList.slice(1)" class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'">{{button.name}}</button>
+                <button  class="nav__button nav__hider" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(buttonsList[0].link)">{{buttonsList[0].name}}</button>
+                <button *ngFor="let button of buttonsList.slice(1)" class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(button.link)">{{button.name}}</button>
             </div>
             <div nz-col>
                 <button nz-dropdown [nzDropdownMenu]="menu" nzTrigger="click" class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'">
@@ -112,7 +112,7 @@
             </div>
             <div nz-col nzSpan="24">
                 <div class="modal__buttons">
-                    <button *ngFor="let button of buttonsList.slice(0,3)" class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'">{{button.name}}</button>
+                    <button *ngFor="let button of buttonsList.slice(0,3)"  class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(button.link)">{{button.name}}</button>
                 </div>
             </div>
             <ul nz-col nzSpan="24" class="modal__list">

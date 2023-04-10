@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { timer } from 'rxjs';
+import { Subscription, timer } from 'rxjs';
 import { Pulse } from 'src/app/animations/buttons';
 import { NavButton } from 'src/app/models/nav';
 import { mainImages } from 'src/assets/config/images';
@@ -21,19 +21,23 @@ export class MainComponent implements OnInit {
   buttonsList: NavButton[] = [
     {
       id: 1,
-      name: 'ЦЕНЫ'
+      name: 'ЦЕНЫ',
+      link: 'rates'
     },
     {
       id: 2,
-      name: 'КТО МЫ'
+      name: 'КТО МЫ',
+      link: 'about'
     },
     {
       id: 3,
-      name: 'FAQ'
+      name: 'FAQ',
+      link: 'faq'
     },
     {
       id: 4,
-      name: 'КОНТАКТЫ'
+      name: 'КОНТАКТЫ',
+      link: 'contacts'
     }    
   ];
   options: {lang: string}[] = [
@@ -93,5 +97,17 @@ export class MainComponent implements OnInit {
 
   showOfferModal(): void {
     this.isOfferModal = !this.isOfferModal;
+  }
+
+  navigate(link: string): void {
+    if(this.isModalVisible){
+      this.isModalVisible = false;
+    }
+    const contactsSection = document.getElementById(link);
+    timer(200).subscribe(() => {
+      if (contactsSection) {
+        contactsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    })
   }
 }
