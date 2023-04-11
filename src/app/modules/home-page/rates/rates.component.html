@@ -1,37 +1,41 @@
-<div class="rates__container">
-    <div class="container rates__bg" *ngFor="let card of cards">
-        <div class="rates__header">
-            <ul class="header__list">
-                <li>
-                    <h1 class="list__title">{{card.name | translate}}</h1>
-                </li>
-                <li>
-                    <h3 class="list__price">{{card.price | translate}}</h3>
-                </li>
-            </ul>
-        </div>
-        <div class="rates__body">
-            <ul class="body__info">
-                <li>{{card.time | translate}}</li>
-                <li>{{card.person | translate}}</li>
-                <li>{{card.volume | translate}}</li>
-                <li class="description">{{card.amount | translate}}</li>
-            </ul>
-            <ul class="rates__footer">
-                <div nz-row [nzGutter]="[0,16]">
-                    <div nz-col nzSpan="24">
-                        <p class="description">
-                            {{card.text | translate}}
-                        </p>
+<div nz-row [nzGutter]="[16,16]">
+    <div nz-col nzXl="12" nzXs="24" *ngFor="let card of cards">
+        <div class="container rates__container">
+            <div class="rates__header">
+                <ul class="header__list">
+                    <li>
+                        <h1 class="list__title">{{card.name}}</h1>
+                    </li>
+                    <li>
+                        <h3 class="list__price">{{card.price}}</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="rates__body">
+                <ul class="body__info">
+                    <li>{{card.time}}</li>
+                    <li *ngIf="card.person">{{card.person}}</li>
+                    <li *ngIf="card.equipment">{{card.equipment}}</li>
+                    <li *ngIf="card.microphone">{{card.microphone}}</li>
+                    <li *ngIf="card.volume">{{card.volume}}</li>
+                    <li *ngIf="card.amount" class="description">{{card.amount}}</li>
+                </ul>
+                <ul class="rates__footer">
+                    <div nz-row [nzGutter]="[0,16]">
+                        <div nz-col nzSpan="24">
+                            <p class="description">
+                                {{card.text}}
+                            </p>
+                        </div>
+                        <div nz-col nzSpan="24">
+                            <button class="rates__button" (click)="showOfferModal(card.name)">{{'rates.button' | translate}}</button>
+                        </div>
                     </div>
-                    <div nz-col nzSpan="24">
-                        <button class="rates__button" (click)="showOfferModal()">{{'rates.button' | translate}}</button>
-                    </div>
-                </div>
-            </ul>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 
-<go-modal [isVisible]="isOfferModal" (isClosed)="showOfferModal()"></go-modal>
+<go-modal [isVisible]="isOfferModal" (isClosed)="isOfferModal = false" [target]="target"></go-modal>
 

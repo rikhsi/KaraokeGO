@@ -1,34 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { Rates } from 'src/app/models/rates';
 
 @Component({
   selector: 'go-rates',
   templateUrl: './rates.component.html',
   styleUrls: ['./rates.component.less']
 })
-export class RatesComponent{
+export class RatesComponent implements OnInit{
   isOfferModal: boolean = false;
-  cards = [
-    {
-      name: "rates.cards.first.name",
-      price: "rates.cards.first.price",
-      time: "rates.cards.first.time",
-      person: "rates.cards.first.person",
-      volume: "rates.cards.first.volume",
-      amount: "rates.cards.first.amount",
-      text: "rates.cards.first.text"
-    },
-    {
-      name: "rates.cards.second.name",
-      price: "rates.cards.second.price",
-      time: "rates.cards.second.time",
-      person: "rates.cards.second.person",
-      volume: "rates.cards.second.volume",
-      amount: "rates.cards.second.amount",
-      text: "rates.cards.second.text"
-    }
-  ];
+  target!: string | undefined;
+  cards: Rates[] = [];
 
-  showOfferModal(): void {
+  constructor(private translateService: TranslateService) {}
+
+  ngOnInit(): void {
+    this.translateService.get('rates.cards').subscribe(data => {
+      this.cards = data;
+    })
+  }
+
+  showOfferModal(name:string | undefined): void {
+    this.target = name;
     this.isOfferModal = !this.isOfferModal;
   }
 }

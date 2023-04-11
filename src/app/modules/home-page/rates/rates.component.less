@@ -5,13 +5,8 @@
 .rates{
     &__container{
         display: flex;
-        gap: 16px;
-    
-        @media (max-width: 1199px) {
-            flex-direction: column;
-        }
-    }
-    &__bg{
+        flex-direction: column;
+        height: 100%;
         background-color: @mainOrange;
     }
     &__header{
@@ -20,8 +15,10 @@
         border-bottom: 1px solid @white;
     }
     &__body{
+        flex: 1 1 auto;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         gap: 100px;
 
         @media (max-width:1199px) {

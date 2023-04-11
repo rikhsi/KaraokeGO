@@ -2,20 +2,23 @@ import { Component, OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { timer } from 'rxjs';
 import { Pulse } from 'src/app/animations/buttons';
+import { HelperService } from 'src/app/services/helper.service';
 import { NavButton } from 'src/app/models/nav';
 import { mainImages } from 'src/assets/config/images';
 import SwiperCore, { EffectFade, Autoplay, SwiperOptions} from 'swiper';
+import { fadeInOut } from 'src/app/animations/effects';
 
 @Component({
   selector: 'go-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.less'],
-  animations: [Pulse]
+  animations: [Pulse , fadeInOut]
 })
 export class MainComponent implements OnInit {
   isOfferModal: boolean = false;
   fallback: string = '../../../../assets/img/fallback.jpg';
-  isModalVisible = false;
+  isModalVisible:boolean = false;
+  isAnimateModal: boolean = false;
   isAnimate:boolean = true;
   currentLang: string = '';
   buttonsList: NavButton[] = [
@@ -64,7 +67,7 @@ export class MainComponent implements OnInit {
   }
   photos: string[] = [];
 
-  constructor(private translateService: TranslateService){
+  constructor(private translateService: TranslateService, private helperService: HelperService){
     SwiperCore.use([EffectFade,Autoplay]);
   }
 
@@ -83,12 +86,20 @@ export class MainComponent implements OnInit {
     this.photos = mainImages;
   }
 
-  showModal(): void {
-    this.isModalVisible = !this.isModalVisible;
+  openModal(): void {
+    this.isAnimateModal = true;
+    this.helperService.hideScroll();
+    timer(300).subscribe(() => {
+      this.isModalVisible = true;
+    })
   }
 
-  activeLogo():void{
-    timer(200).subscribe(() => this.isModalVisible = false);
+  hideModal(): void {
+    timer(100).subscribe(() => {
+      this.isModalVisible = false;
+    })
+    this.helperService.showScroll();
+    this.isAnimateModal = false;
   }
 
   openLink():void{
@@ -96,15 +107,13 @@ export class MainComponent implements OnInit {
   }
 
   showOfferModal(): void {
-    this.isOfferModal = !this.isOfferModal;
+    timer(200).subscribe(() =>this.isOfferModal = !this.isOfferModal)
   }
 
   navigate(link: string): void {
-    if(this.isModalVisible){
-      this.isModalVisible = false;
-    }
+    this.hideModal();
     const contactsSection = document.getElementById(link);
-    timer(200).subscribe(() => {
+    timer(300).subscribe(() => {
       if (contactsSection) {
         contactsSection.scrollIntoView({ behavior: 'smooth' });
       }

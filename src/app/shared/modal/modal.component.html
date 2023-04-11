@@ -1,4 +1,4 @@
-<nz-modal [(nzVisible)]="isVisible" [nzTitle]="''" (nzOnCancel)="handleCancel()" [nzClosable]="false" [nzFooter]="null" [autofocus]="false">
+<nz-modal  [nzStyle]="{ top: '20px' }" [(nzVisible)]="isVisible" [nzTitle]="''" (nzOnCancel)="handleCancel()" [nzClosable]="false" [nzFooter]="null" [autofocus]="false">
     <ng-container *nzModalContent>
         <div class="modal__container">
             <div nz-row [nzGutter]="[0,24]">
@@ -45,8 +45,7 @@
                                 <span class="form__label">{{'Выберите тариф'}}*</span>
                             </label>
                             <nz-radio-group nz-col nzSpan="24" nzButtonStyle="solid" formControlName="rate">
-                                <label nz-radio-button [nzValue]="'feedback.inputs.six.options.first' | translate">{{'feedback.inputs.six.options.first' | translate}}</label>
-                                <label nz-radio-button [nzValue]="'feedback.inputs.six.options.second' | translate">{{'feedback.inputs.six.options.second' | translate}}</label>
+                                <label nz-radio-button [nzValue]="rate.name" *ngFor="let rate of rates">{{rate.name}}</label>
                             </nz-radio-group>
                             <div nz-col nzSpan="24" class="form__amount">
                                 {{'feedback.inputs.six.info' | translate}}

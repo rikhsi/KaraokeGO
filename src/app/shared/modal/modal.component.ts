@@ -1,16 +1,19 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 import { differenceInCalendarDays} from 'date-fns';
 import { timer } from 'rxjs';
 import { Inputs } from 'src/app/models/inputs';
+import { Rates } from 'src/app/models/rates';
 
 @Component({
   selector: 'go-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.less']
 })
-export class ModalComponent implements OnInit {
+export class ModalComponent implements OnInit , OnChanges{
   @Input() isVisible!:boolean;
+  @Input() target: string | undefined = '';
   @Output() isClosed = new EventEmitter();
   private today = new Date();
   form!: FormGroup;
@@ -38,13 +41,14 @@ export class ModalComponent implements OnInit {
       controlName: 'message'
     }
   }
+  rates!: Rates[];
 
-  constructor(private fb: FormBuilder) { 
+  constructor(private fb: FormBuilder,private translateService: TranslateService) { 
     this.form = this.fb.group({
       name: [null, Validators.required],
       mail: [null, [Validators.required, Validators.email]],
       calendar: [null, Validators.required],
-      rate: ['Стандарт'],
+      rate: [this.target],
       message: [null, Validators.required]
     });
   }
@@ -54,7 +58,15 @@ export class ModalComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+    this.translateService.get('rates.cards').subscribe(data => {
+      this.rates = data;
+      this.target = data[0].name;
+    })
+  
+  }
+
+  ngOnChanges() {
+    this.form.controls['rate'].setValue(this.target);
   }
 
   submit(): void {

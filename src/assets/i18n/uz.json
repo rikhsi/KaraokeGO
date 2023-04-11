@@ -64,63 +64,89 @@
     },
     "boon": {
         "title": "",
-        "cards": {
-            "first": {
+        "cards": [
+            {
                 "title": "",
                 "text": ""
             },
-            "second": {
+            {
                 "title": "",
                 "text": ""
             },
-            "third": {
+            {
                 "title": "",
                 "text": ""
             },
-            "fourth": {
+            {
                 "title": "",
                 "text": ""
             },
-            "five": {
+            {
                 "title": "",
                 "text": ""
             },
-            "six": {
+            {
                 "title": "",
                 "text": ""
             },
-            "seven": {
+            {
                 "title": "",
                 "text": ""
             },
-            "eight": {
+            {
                 "title": "",
                 "text": ""
             }
-        }
+        ]
     },
     "rates": {
-        "cards": {
-            "first": {
+        "cards": [
+            {
                 "name": "",
                 "price": "",
                 "time": "",
                 "person": "",
+                "equipment": "",
+                "microphone": "",
                 "volume": "",
                 "amount": "",
                 "text": ""
             },
-            "second": {
+            {
                 "name": "",
                 "price": "",
                 "time": "",
                 "person": "",
+                "equipment": "",
+                "microphone": "",
+                "volume": "",
+                "amount": "",
+                "text": ""
+            },
+            {
+                "name": "",
+                "price": "",
+                "time": "",
+                "person": "",
+                "equipment": "",
+                "microphone": "",
+                "volume": "",
+                "amount": "",
+                "text": ""
+            },
+            {
+                "name": "",
+                "price": "",
+                "time": "",
+                "person": "",
+                "equipment": "",
+                "microphone": "",
                 "volume": "",
                 "amount": "",
                 "text": ""
             }
-        },
-        "button": ""
+        ],
+        "button": "Заказать"
     },
     "contacts": {
         "title": "",
@@ -130,36 +156,36 @@
         "book": ""
     },
     "faq": {
-        "cards": {
-            "first": {
+        "cards": [
+            {
                 "question": "",
                 "answer": ""
             },
-            "second": {
+            {
                 "question": "",
                 "answer": ""
             },
-            "third": {
+            {
                 "question": "",
                 "answer": ""
             },
-            "fourth": {
+            {
                 "question": "",
                 "answer": ""
             },
-            "five": {
+            {
                 "question": "",
                 "answer": ""
             },
-            "six": {
+            {
                 "question": "",
                 "answer": ""
             },
-            "seven": {
+            {
                 "question": "",
                 "answer": ""
             }
-        }
+        ]
     },
     "offer": {
         "text": "",

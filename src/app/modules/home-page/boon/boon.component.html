@@ -27,7 +27,7 @@
                     <div nz-row [nzGutter]="[16]">
                         <div nz-col nzSpan="12" *ngFor="let photo of card.images">
                             <div class="boon__card">
-                                <img nz-image [nzSrc]="'../../../../assets/img/boon/'+ photo" alt="boon">
+                                <img nz-image [nzSrc]="'../../../../assets/img/boon/'+ photo" [nzFallback]="fallback" alt="boon">
                             </div>
                         </div>
                     </div>
@@ -39,10 +39,10 @@
 
 <ng-template #buttons>
     <div class="boon__buttons">
-        <button class="buttons__button" (click)="swipePrev()">
+        <button class="buttons__button" (click)="swipePrev()" [@pulse]="isActiveButtonLeft ? 'normal': 'pulse'">
             <span nz-icon nzType="left" nzTheme="outline"></span>
         </button>
-        <button class="buttons__button" (click)="swipeNext()">
+        <button class="buttons__button" (click)="swipeNext()" [@pulse]="isActiveButtonRight ? 'normal': 'pulse'">
             <span nz-icon nzType="right" nzTheme="outline"></span>
         </button>
     </div>

@@ -1,4 +1,4 @@
-<main nz-row [nzGutter]="[0,{xl:36,lg:24,md:24,sm:16,xs:16}]" class="home__main" [ngClass]="overflowHidden ? 'home__hidden' : ''" [@fadeInOut]>
+<main nz-row [nzGutter]="[0,{xl:36,lg:24,md:24,sm:16,xs:16}]" class="home__main" [ngClass]="(hideScroll$ | async) ? 'home__hidden' : ''" [@fadeInOut]>
     <section nz-col nzSpan="24" nzLink="main">
         <go-main></go-main>
     </section> 

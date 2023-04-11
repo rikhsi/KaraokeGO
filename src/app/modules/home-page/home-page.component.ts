@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeInOut } from 'src/app/animations/effects';
+import { HelperService } from 'src/app/services/helper.service';
 
 @Component({
   selector: 'go-home-page',
@@ -8,12 +9,10 @@ import { fadeInOut } from 'src/app/animations/effects';
   animations: [fadeInOut]
 })
 export class HomePageComponent implements OnInit {
-  overflowHidden: boolean = true;
+  public hideScroll$ = this.helperService.isVisible;
 
-  constructor(){}
+  constructor(private helperService: HelperService){}
 
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
 
 }
