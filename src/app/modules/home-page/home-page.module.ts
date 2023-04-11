@@ -24,7 +24,6 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzImageModule } from 'ng-zorro-antd/image';
 import { NzModalModule } from 'ng-zorro-antd/modal';
-import { NzAnchorModule } from 'ng-zorro-antd/anchor';
 
 //translateModule
 import { TranslateModule } from '@ngx-translate/core';
@@ -64,7 +63,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FormsModule,
     ReactiveFormsModule,
     NzFormModule,
-    NzAnchorModule,
     NzIconModule,
     SwiperModule,
     NzImageModule,

@@ -12,12 +12,8 @@
                     <button class="nav__button logo__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(buttonsList[0].link)">{{buttonsList[0].name}}</button>
                 </div>
                 <div nz-col class="main__burger-hide">
-                    <button class="menu" [ngClass]="isModalVisible ? 'opened' : ''"  (click)="showModal()" >
-                        <svg width="100" height="100" viewBox="0 0 100 100">
-                            <path class="menu__line line__1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                            <path class="menu__line line__2" d="M 20,50 H 80" />
-                            <path class="menu__line line__3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                        </svg>
+                    <button class="burger" [ngClass]="isModalVisible ? 'opened' : ''" (click)="showModal()">
+                        <span></span>
                     </button>
                 </div>
             </div>
@@ -96,59 +92,56 @@
     </ul>
 </nz-dropdown-menu>
 
-<nz-modal [(nzVisible)]="isModalVisible" (nzOnCancel)="showModal()" [nzTitle]="''" [nzClosable]="false" [nzFooter]="null">
-    <ng-container *nzModalContent>
-        <div nz-row [nzGutter]="[0,64]">
-            <div nz-col nzSpan="24">
+<ng-container *ngIf="isModalVisible">
+    <div class="modal__wrapper">
+        <div class="modal__container">
+            <div class="modal__box">   
                 <div nz-row nzJustify="center">
                     <ng-container [ngTemplateOutlet]="logo"></ng-container>
                 </div>
-            </div>
-            <div nz-col nzSpan="24">
-                <div nz-row nzJustify="center">
-                    <div nz-col>
-                        <button nz-dropdown [nzDropdownMenu]="menu" nzTrigger="click" class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'">
-                            {{currentLang}}
-                            <span nz-icon nzType="down" nzTheme="outline" class="nav__button-icon"></span>
-                        </button>
+                <div class="modal__scroll">
+                    <div nz-row nzJustify="center">
+                        <div nz-col>
+                            <button nz-dropdown [nzDropdownMenu]="menu" nzTrigger="click" class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'">
+                                {{currentLang}}
+                                <span nz-icon nzType="down" nzTheme="outline" class="nav__button-icon"></span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div nz-col nzSpan="24">
-                <div class="modal__buttons">
-                    <button *ngFor="let button of buttonsList.slice(0,3)"  class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(button.link)">{{button.name}}</button>
-                </div>
-            </div>
-            <ul nz-col nzSpan="24" class="modal__list">
-                <li>
-                    ТЕЛЕФОН:
-                    <a href="tel:+998990031497">+998990031497</a>
-                </li>
-                <li>
-                    EMAIL: 
-                    <a href="mailto: INFO@BERTOLUCCI-SOUND.COM">
-                        INFO@BERTOLUCCI-SOUND.COM
-                    </a>
-                </li>
-                <li>
-                    БРОНЬ:
-                    <a href="mailto: INFO@BERTOLUCCI-SOUND.COM">
-                        BOOKING@BERTOLUCCI-SOUND.COM
-                    </a>
-                </li>
-            </ul>
-            <div nz-col nzSpan="24">
-                <div nz-row [nzGutter]="[0,16]">
-                    <div nz-col nzSpan="24">
-                        <button class="modal__button" (click)="openLink()">Telegram</button>
+                    <div class="modal__buttons">
+                        <button *ngFor="let button of buttonsList.slice(0,3)"  class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(button.link)">{{button.name}}</button>
                     </div>
-                    <div nz-col nzSpan="24">
-                        <button class="modal__button" (click)="openLink()">Instagram</button>
+                    <ul class="modal__list">
+                        <li>
+                            ТЕЛЕФОН:
+                            <a href="tel:+998990031497">+998990031497</a>
+                        </li>
+                        <li>
+                            EMAIL: 
+                            <a href="mailto: INFO@BERTOLUCCI-SOUND.COM">
+                                INFO@BERTOLUCCI-SOUND.COM
+                            </a>
+                        </li>
+                        <li>
+                            БРОНЬ:
+                            <a href="mailto: INFO@BERTOLUCCI-SOUND.COM">
+                                BOOKING@BERTOLUCCI-SOUND.COM
+                            </a>
+                        </li>
+                    </ul>
+                    <div nz-row [nzGutter]="[0,16]">
+                        <div nz-col nzSpan="24">
+                            <button class="modal__button" (click)="openLink()">Telegram</button>
+                        </div>
+                        <div nz-col nzSpan="24">
+                            <button class="modal__button" (click)="openLink()">Instagram</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </ng-container>
-</nz-modal>
+    </div>
+    
+</ng-container>
 
 <go-modal [isVisible]="isOfferModal" (isClosed)="showOfferModal()"></go-modal>

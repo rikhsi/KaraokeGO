@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { fadeInOut } from 'src/app/animations/effects';
 
 @Component({
@@ -7,6 +7,13 @@ import { fadeInOut } from 'src/app/animations/effects';
   styleUrls: ['./home-page.component.less'],
   animations: [fadeInOut]
 })
-export class HomePageComponent {
+export class HomePageComponent implements OnInit {
+  overflowHidden: boolean = true;
+
+  constructor(){}
+
+  ngOnInit(): void {
+    
+  }
 
 }
