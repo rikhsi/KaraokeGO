@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Subscription, timer } from 'rxjs';
+import { timer } from 'rxjs';
 import { Pulse } from 'src/app/animations/buttons';
 import { NavButton } from 'src/app/models/nav';
 import { mainImages } from 'src/assets/config/images';

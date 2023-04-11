@@ -20,3 +20,6 @@ export const minus = trigger('minus', [
         animate('0ms', style({ opacity: 0}))
     ])
 ]);
+
+
+
