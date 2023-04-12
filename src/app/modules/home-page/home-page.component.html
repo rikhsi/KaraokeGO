@@ -1,32 +1,32 @@
-<main nz-row [nzGutter]="[0,{xl:36,lg:24,md:24,sm:16,xs:16}]" class="home__main" [ngClass]="(hideScroll$ | async) ? 'home__hidden' : ''" [@fadeInOut]>
-    <section nz-col nzSpan="24" nzLink="main">
+<main nz-row [nzGutter]="[0,{xl:36,lg:24,md:24,sm:16,xs:16}]" class="home__main" [ngClass]="(hideScroll$ | async) ? 'home__hidden' : ''">
+    <section nz-col nzSpan="24" nzLink="main" data-aos="fade-right">
         <go-main></go-main>
     </section> 
-    <section nz-col nzSpan="24">
+    <section nz-col nzSpan="24" data-aos="fade-left">
         <go-advantages></go-advantages>
     </section>
-    <section nz-col nzSpan="24" id="about">
+    <section nz-col nzSpan="24" id="about" data-aos="fade-right">
         <go-about></go-about>
     </section>
-    <section nz-col nzSpan="24">
+    <section nz-col nzSpan="24" data-aos="fade-left">
         <go-player></go-player>
     </section>
-    <section nz-col nzSpan="24">
+    <section nz-col nzSpan="24" data-aos="fade-right">
         <go-boon></go-boon>
     </section>
-    <section nz-col nzSpan="24" id="rates">
+    <section nz-col nzSpan="24" id="rates" data-aos="fade-left">
         <go-rates></go-rates>
     </section>
-    <section nz-col nzSpan="24" nzLink="feedback">
+    <section nz-col nzSpan="24" nzLink="feedback" data-aos="fade-right">
         <go-feedback></go-feedback>
     </section>
-    <section nz-col nzSpan="24" id="faq">
+    <section nz-col nzSpan="24" id="faq" data-aos="fade-left">
         <go-faq></go-faq>
     </section>
-    <section nz-col nzSpan="24" id="contacts">
+    <section nz-col nzSpan="24" id="contacts" data-aos="fade-right">
         <go-contacts></go-contacts>
     </section>
-    <section nz-col nzSpan="24" nzLink="offer">
+    <section nz-col nzSpan="24" nzLink="offer" data-aos="fade-left">
         <go-offer></go-offer>
     </section>
 </main>

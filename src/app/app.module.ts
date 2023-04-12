@@ -20,7 +20,6 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpLoaderFactory } from './services/translateFactory';
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 
-
 registerLocaleData(ru);
 
 @NgModule({
@@ -44,7 +43,9 @@ registerLocaleData(ru);
     HomePageModule,
 
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [
+    { provide: NZ_I18N, useValue: en_US },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

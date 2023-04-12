@@ -8,6 +8,7 @@ import { advantagesImages } from 'src/assets/config/images';
   styleUrls: ['./advantages.component.less']
 })
 export class AdvantagesComponent implements OnInit{
+  fallback:string = '../../../../assets/img/fallback.jpg'
   cards:Card[] = [
     {
       id: 1,
