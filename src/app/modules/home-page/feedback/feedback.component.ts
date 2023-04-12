@@ -36,7 +36,7 @@ export class FeedbackComponent implements OnInit{
       controlName: 'message'
     }
   }
- 
+
   constructor(private fb: FormBuilder) { 
     this.form = this.fb.group({
       name: [null, Validators.required],
