@@ -209,7 +209,7 @@
     &__wrapper{
         position: fixed;
         display: flex;
-        z-index: 1000;
+        z-index: 10000;
         top: 0;
         left: 0;
         width: 100%;
@@ -334,3 +334,11 @@
     }
 }
 
+
+::ng-deep .cdk-overlay-container{
+    z-index: 10000;
+}
+
+::ng-deep .cdk-overlay-pane{
+    z-index: 10000;
+}
