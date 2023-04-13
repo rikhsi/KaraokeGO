@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Card } from 'src/app/models/adv';
 import { Rates } from 'src/app/models/rates';
 
 @Component({
@@ -9,7 +10,7 @@ import { Rates } from 'src/app/models/rates';
 })
 export class RatesComponent implements OnInit{
   isOfferModal: boolean = false;
-  target!: string | undefined;
+  target!: Rates | undefined;
   cards: Rates[] = [];
 
   constructor(private translateService: TranslateService) {}
@@ -20,7 +21,7 @@ export class RatesComponent implements OnInit{
     })
   }
 
-  showOfferModal(name:string | undefined): void {
+  showOfferModal(name:Rates | undefined): void {
     this.target = name;
     this.isOfferModal = !this.isOfferModal;
   }

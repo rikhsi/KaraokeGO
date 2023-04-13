@@ -48,7 +48,7 @@
                                 <label nz-radio-button [nzValue]="rate.name" *ngFor="let rate of rates">{{rate.name}}</label>
                             </nz-radio-group>
                             <div nz-col nzSpan="24" class="form__amount">
-                                {{'feedback.inputs.six.info' | translate}}
+                                {{amount}}
                             </div>
                         </nz-form-item>
                         <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]">

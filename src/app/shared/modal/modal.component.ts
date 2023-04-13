@@ -13,7 +13,8 @@ import { Rates } from 'src/app/models/rates';
 })
 export class ModalComponent implements OnInit , OnChanges{
   @Input() isVisible!:boolean;
-  @Input() target: string | undefined = '';
+  @Input() target: Rates | undefined;
+  amount: string | undefined = '';
   @Output() isClosed = new EventEmitter();
   private today = new Date();
   form!: FormGroup;
@@ -48,7 +49,7 @@ export class ModalComponent implements OnInit , OnChanges{
       name: [null, Validators.required],
       mail: [null, [Validators.required, Validators.email]],
       calendar: [null, Validators.required],
-      rate: [this.target],
+      rate: [this.target?.name],
       message: [null, Validators.required]
     });
   }
@@ -60,13 +61,24 @@ export class ModalComponent implements OnInit , OnChanges{
   ngOnInit(): void {
     this.translateService.get('rates.cards').subscribe(data => {
       this.rates = data;
-      this.target = data[0].name;
+      this.target = data[0];
     })
+    this.form.get('rate')?.valueChanges.subscribe((value) => {
+      this.rates.find(data => {
+        if(value === data.name){
+          this.amount = data.amount;
+        }
+      })
+    });
   
   }
 
+  counter(amount: string | undefined): void {
+    this.amount = amount;
+  }
+
   ngOnChanges() {
-    this.form.controls['rate'].setValue(this.target);
+    this.form.controls['rate'].setValue(this.target?.name);
   }
 
   submit(): void {
