@@ -2,6 +2,7 @@
     "thanks": {
         "title": "Request sent, please wait for a response via email",
         "text": "Alternatively, you can contact us using the links below",
+        "textNumber": "Or contact us by number",
         "button": "Send again"
         },
     "main": {

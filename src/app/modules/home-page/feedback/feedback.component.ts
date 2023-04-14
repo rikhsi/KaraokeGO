@@ -3,14 +3,19 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { differenceInCalendarDays} from 'date-fns';
 import { Inputs } from 'src/app/models/inputs';
 import emailjs from 'emailjs-com';
+import { contacts, links } from 'src/assets/config/contacts';
+import { timer } from 'rxjs';
+import { fadeInOut } from 'src/app/animations/effects';
 
 @Component({
   selector: 'go-feedback',
   templateUrl: './feedback.component.html',
-  styleUrls: ['./feedback.component.less']
+  styleUrls: ['./feedback.component.less'],
+  animations: [fadeInOut]
 })
 export class FeedbackComponent implements OnInit{
   private today = new Date();
+  isForm: boolean = true;
   form!: FormGroup;
   formInputs: Inputs = {
     inputs: [
@@ -36,6 +41,7 @@ export class FeedbackComponent implements OnInit{
       controlName: 'message'
     }
   }
+  phone: string = '';
 
   constructor(private fb: FormBuilder) { 
     this.form = this.fb.group({
@@ -47,7 +53,7 @@ export class FeedbackComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    
+    this.phone = contacts.phone;
   }
 
   submit(): void {
@@ -60,6 +66,7 @@ export class FeedbackComponent implements OnInit{
       }, 'uzVFM_b-t4WV_Bpif')
       .then(() => {
         this.form.reset();
+        this.isForm = false;
       });
     } else {
       Object.values(this.form.controls).forEach(control => {
@@ -69,6 +76,10 @@ export class FeedbackComponent implements OnInit{
         }
       });
     }
+  }
+
+  showForm():void{
+    timer(300).subscribe(() => this.isForm = true)
   }
 
   disabledDate = (current: Date): boolean => {

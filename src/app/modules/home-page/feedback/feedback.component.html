@@ -1,56 +1,95 @@
 <div class="container feedback__bg">
-    <div nz-row [nzGutter]="[36,24]">
-        <div nz-col nzXl="12" nzXs="24">
+    <ng-container *ngIf="isForm">
+        <div nz-row [nzGutter]="[36,24]" [@fadeInOut]>
+            <div nz-col nzXl="12" nzXs="24">
+                <div nz-row [nzGutter]="[0,24]">
+                    <h2 nz-col nzSpan="24" class="feedback__title">{{'feedback.title' | translate}}</h2>
+                    <p nz-col nzSpan="24" class="feedback__text">
+                        {{'feedback.text' | translate}}
+                    </p>
+                </div>
+            </div>
+            <div nz-col nzXl="12" nzXs="24">
+                <form [formGroup]="form" (ngSubmit)="submit()" class="feedback__form">
+                    <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]" *ngFor="let data of formInputs.inputs">
+                        <label nz-col nzSpan="24">
+                            <span class="form__label">{{data.title | translate}}*</span>
+                        </label>
+                        <nz-form-control nzSpan="24">
+                            <input nz-input [placeholder]="data.placeholder | translate" [formControlName]="data.controlName">
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]">
+                        <label nz-col nzSpan="24">
+                            <span class="form__label">{{formInputs.calendar.title | translate}}*</span>
+                        </label>
+                        <nz-form-control nzSpan="24">
+                            <nz-date-picker 
+                                nzFormat="yyyy-MM-dd" 
+                                [nzPlacement]="'bottomLeft'"
+                                [nzBackdrop]="false"
+                                [nzPlaceHolder]="formInputs.calendar.placeholder | translate" 
+                                [nzDisabledDate]="disabledDate" 
+                                [nzShowNow]="false" 
+                                [nzShowTime]="false" 
+                                [nzSuffixIcon]="''" 
+                                [nzAllowClear]="false" 
+                                [formControlName]="formInputs.calendar.controlName">
+                            </nz-date-picker>
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]">
+                        <label nz-col nzSpan="24">
+                            <span class="form__label">{{formInputs.area.title | translate}}*</span>
+                        </label>
+                        <nz-form-control nzSpan="24">
+                            <textarea nz-input [placeholder]="formInputs.area.placeholder | translate" formControlName="message"  class="form__area"></textarea>
+                        </nz-form-control>
+                    </nz-form-item>
+                    <div>
+                        <button class="form__button">{{'feedback.button' | translate}}</button>
+                        <p class="form__politic">{{'feedback.confirm' | translate}}</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="!isForm" [ngTemplateOutlet]="hold"></ng-container>
+</div>
+
+
+<ng-template #hold>
+    <div nz-row [nzGutter]="[24,24]" [@fadeInOut]>
+        <div nz-col nzXs="24" nzXl="12" class="hold__box-1">
             <div nz-row [nzGutter]="[0,24]">
                 <h2 nz-col nzSpan="24" class="feedback__title">{{'feedback.title' | translate}}</h2>
                 <p nz-col nzSpan="24" class="feedback__text">
-                    {{'feedback.text' | translate}}
+                    {{'thanks.title' | translate}}
+                    karaokegocz@gmail.com
                 </p>
+                <div nz-col nzSpan="24">
+                    <div nz-row [nzGutter]="[0,16]">
+                        <div nz-col nzSpan="24">
+                            <h2 class="feedback__title">{{'thanks.textNumber' | translate}}</h2>
+                        </div>
+                        <div nz-col nzSpan="24">
+                            <a [href]="'tel:' + phone" class="hold__phone feedback__text">{{phone}}</a>
+                        </div>
+                        <div nz-col nzSpan="24">
+                            <button class="hold__button" (click)="showForm()">{{'thanks.button' | translate}}</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div nz-col nzXl="12" nzXs="24">
-            <form [formGroup]="form" (ngSubmit)="submit()" class="feedback__form">
-                <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]" *ngFor="let data of formInputs.inputs">
-                    <label nz-col nzSpan="24">
-                        <span class="form__label">{{data.title | translate}}*</span>
-                    </label>
-                    <nz-form-control nzSpan="24">
-                        <input nz-input [placeholder]="data.placeholder | translate" [formControlName]="data.controlName">
-                    </nz-form-control>
-                </nz-form-item>
-                <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]">
-                    <label nz-col nzSpan="24">
-                        <span class="form__label">{{formInputs.calendar.title | translate}}*</span>
-                    </label>
-                    <nz-form-control nzSpan="24">
-                        <nz-date-picker 
-                            nzFormat="yyyy-MM-dd" 
-                            [nzPlacement]="'bottomLeft'"
-                            [nzBackdrop]="false"
-                            [nzPlaceHolder]="formInputs.calendar.placeholder | translate" 
-                            [nzDisabledDate]="disabledDate" 
-                            [nzShowNow]="false" 
-                            [nzShowTime]="false" 
-                            [nzSuffixIcon]="''" 
-                            [nzAllowClear]="false" 
-                            [formControlName]="formInputs.calendar.controlName">
-                        </nz-date-picker>
-                    </nz-form-control>
-                </nz-form-item>
-                <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]">
-                    <label nz-col nzSpan="24">
-                        <span class="form__label">{{formInputs.area.title | translate}}*</span>
-                    </label>
-                    <nz-form-control nzSpan="24">
-                        <textarea nz-input [placeholder]="formInputs.area.placeholder | translate" formControlName="message"  class="form__area"></textarea>
-                    </nz-form-control>
-                </nz-form-item>
-                <div>
-                    <button class="form__button">{{'feedback.button' | translate}}</button>
-                    <p class="form__politic">{{'feedback.confirm' | translate}}</p>
+        <div nz-col nzXs="24" nzXl="12" class="hold__box-2">
+            <div nz-row nzJustify="end" class="hold__container">
+                <div nz-col>
+                    <div class="hold__image">
+                        <img src="../../../../assets/img/s.jpg" alt="hold">
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
-
-</div>
+</ng-template>

@@ -120,3 +120,67 @@
     background-color: inherit;
 }
 
+
+.hold{
+    &__container{
+        justify-content: center !important;
+    }
+    &__image{
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+        max-height: 450px;
+        overflow: hidden;
+
+        @media (max-width:1199px) {
+            max-width: 450px;
+            max-height: 350px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+    &__phone{
+        transition: 0.3s;
+        &:hover{
+            transition: 0.3s;
+            color: @mainOrange;
+        }
+    }
+    &__button{
+        padding: 16px 24px;
+        border: 1px solid @grayishWhite;
+        border-radius: 16px;
+        background: @mainBlack;   
+        transition: 0.3s;
+        .text(500,20px,125%,@grayishWhite);   
+
+        @media (max-width:767px) {
+            width: 100%;
+        }
+
+        &:hover{
+            transition: 0.3s;
+            border-color: @mainYellow;
+        }      
+
+        &:active{
+            animation:buttonPulse 0.3s 1 ;
+        }
+    }
+    &__box{
+        &-1{
+            @media (max-width:1199px) {
+                order: 2;
+            }
+        }
+        &-2{
+            @media (max-width:1199px) {
+                order: 1;
+            }
+        }
+    }
+}

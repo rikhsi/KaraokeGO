@@ -6,11 +6,14 @@ import { timer } from 'rxjs';
 import { Inputs } from 'src/app/models/inputs';
 import { Rates } from 'src/app/models/rates';
 import emailjs from 'emailjs-com';
+import { contacts } from 'src/assets/config/contacts';
+import { fadeInOut } from 'src/app/animations/effects';
 
 @Component({
   selector: 'go-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.less']
+  styleUrls: ['./modal.component.less'],
+  animations: [fadeInOut]
 })
 export class ModalComponent implements OnInit , OnChanges{
   @Input() isVisible!:boolean;
@@ -44,6 +47,8 @@ export class ModalComponent implements OnInit , OnChanges{
     }
   }
   rates!: Rates[];
+  isForm: boolean = true;
+  phone: string = '';
 
   constructor(private fb: FormBuilder,private translateService: TranslateService) { 
     this.form = this.fb.group({
@@ -65,6 +70,7 @@ export class ModalComponent implements OnInit , OnChanges{
   }
 
   ngOnInit(): void {
+    this.phone = contacts.phone;
     this.translateService.onLangChange.subscribe(() => {
       this.translateService.get('rates.cards').subscribe(data => {
         this.rates = data;
@@ -100,7 +106,7 @@ export class ModalComponent implements OnInit , OnChanges{
       }, 'uzVFM_b-t4WV_Bpif')
       .then(() => {
         this.form.reset();
-        this.isClosed.emit();
+        this.isForm = false;
       });
     } else {
       Object.values(this.form.controls).forEach(control => {
@@ -110,6 +116,10 @@ export class ModalComponent implements OnInit , OnChanges{
         }
       });
     }
+  }
+
+  showForm():void{
+    timer(300).subscribe(() => this.isForm = true)
   }
 
   disabledDate = (current: Date): boolean => {

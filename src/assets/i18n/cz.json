@@ -2,6 +2,7 @@
     "thanks": {
         "title": "Žádost odeslána, čekejte na odpověď e-mailem",
         "text": "Alternativně nás můžete kontaktovat pomocí odkazů níže",
+        "textNumber": "Nebo nás můžete kontaktovat na čísle",
         "button": "Odeslat znovu"
         },
     "main": {
