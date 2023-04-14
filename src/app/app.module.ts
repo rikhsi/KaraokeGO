@@ -21,6 +21,7 @@ import { HttpLoaderFactory } from './services/translateFactory';
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 
 registerLocaleData(en);
+const lang = localStorage.getItem('lang') || 'en';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ registerLocaleData(en);
         useFactory: HttpLoaderFactory,
         deps: [HttpClient],
       },
-      defaultLanguage: 'en',
+      defaultLanguage: lang,
     }),
     HomePageModule,
 

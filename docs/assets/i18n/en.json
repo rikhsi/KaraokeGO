@@ -1,0 +1,206 @@
+{
+    "thanks": {
+        "title": "Request sent, please wait for a response via email",
+        "text": "Alternatively, you can contact us using the links below",
+        "button": "Send again"
+        },
+    "main": {
+        "title": "Rent karaoke for any event",
+        "text": "We offer professional karaoke sets for any event: from home parties and corporate events to weddings and anniversaries. You will find karaoke sets that meet your needs and budget.",
+        "button": "Order"
+    },
+    "advantages": {
+        "cards": [
+            {
+            "title": "Mobility",
+            "text": "Mobility - we will bring and install the karaoke system to any point in Europe."
+            },
+            {
+            "title": "Wide selection",
+            "text": "Over 100,000 foreign and domestic songs for every taste."
+            },
+            {
+            "title": "Quality",
+            "text": "A sound engineer will set up the equipment and monitor its operation."
+            }
+        ]
+    },
+    "feedback": {
+        "title": "Contact us",
+        "text": "Leave a request and we will contact you ourselves, tell and explain what to do next.",
+        "inputs": {
+            "first": {
+            "title": "How should we address you?",
+            "placeholder": "Name"
+            },
+            "second": {
+            "title": "Email",
+            "placeholder": "Email"
+            },
+            "third": {
+            "title": "Date",
+            "placeholder": "Select the date of the event"
+            },
+            "fourth": {
+            "title": "Message",
+            "placeholder": "Ask a question or specify details of the future order"
+            },
+            "five": {
+            "title": "Phone number",
+            "placeholder": "Your phone number"
+            },
+            "six": {
+            "options": {
+            "first": "Standard",
+            "second": "Party"
+            },
+            "info": {
+            "prefix": "up to",
+            "person": "person"
+            }
+            },
+            "seven": {
+                "title": "Choose a plan"
+            }
+        },
+        "button": "Send request",
+        "confirm": "By submitting this form, you consent to the processing of personal data."
+    },
+    "about": {
+        "title": "Who we are",
+        "texts": {
+        "first": "We are a team of people who are obsessed with good sound. For 8 years, we have been providing technical support for events: installing sound and lighting, selecting DJs and musicians. We organize karaoke on the go in Prague and anywhere in the Czech Republic and Europe.",
+        "second": "We believe that music is a very important part of any celebration. It sets and maintains the mood of the guests and our task is to provide you with that mood. We collaborate with leading artists and musicians in Europe and guarantee the quality of their work."
+        }
+    },
+    "boon": {
+        "title": "What's included?",
+        "cards": [
+        {
+        "title": "Karaoke system with video display",
+        "text": "Instead of just reading the lyrics on the screen, the video display shows clips or animations that correspond to the song. This creates a more engaging and interactive experience for users, helping them better immerse themselves in the music."
+        },
+        {
+        "title": "55-inch screen",
+        "text": "A large screen provides comfortable viewing of song lyrics for all participants. In addition, a large screen makes it easier to read song lyrics for people with weak eyesight."
+        },
+        {
+        "title": "Powerful acoustic system from Bose, Electro Voice, Yamaha",
+        "text": "Powerful acoustic systems can provide higher sound quality than ordinary audio systems. This is particularly important for karaoke, as good sound is a necessary condition for users to sing songs and enjoy the music."
+        },
+        {
+        "title": "Song catalog - over 100,000 hits",
+        "text": "A catalog of 100,000 songs provides users with a huge selection of music to perform. This allows you to satisfy the requests of any participants who may have different preferences in genres and performers."
+        },
+        {
+        "title": "3 microphones with good sound",
+        "text": "Delivery and installation services provide maximum convenience for customers, who can be sure that the equipment will be delivered and installed on site without the need to spend their time and effort organizing and setting up the equipment."
+        },
+        {
+        "title": "Sound engineer will do all the technical work",
+        "text": "The sound engineer has professional skills in the field of sound equipment and can set up all devices at the event for the best sound quality. He can also adjust the sound on the go to make the performers' voices sound as clear and crisp as possible."
+        },
+        {
+        "title": "Delivery - we will install it anywhere in Europe",
+        "text": "Delivery and installation services provide maximum convenience for customers, who can be sure that the equipment will be delivered and installed on site without the need to spend their time and effort organizing and setting up the equipment."
+        },
+        {
+        "title": "Voice processing",
+        "text": "Voice processing technology allows you to improve the sound quality, smoothing out flaws in the voice, eliminating noise and interference. This allows performers to sound more professional and expressive."
+        }
+        ]
+    },
+    "rates": {
+        "cards": [
+        {
+        "name": "Home",
+        "price": "4500 CZK - for individuals",
+        "time": "up to 24 hours",
+        "person": "",
+        "equipment": "",
+        "microphone": "2 microphones",
+        "volume": "500 W sound",
+        "amount": "up to 20 people",
+        "text": "This package is designed for home use. It includes the minimum components for organizing a karaoke party, including microphones, sound system, and the ability to use it for a small group of people."
+        },
+        {
+        "name": "Basic",
+        "price": "10,000 CZK + VAT",
+        "time": "up to 6 hours",
+        "person": "Sound engineer",
+        "equipment": "",
+        "microphone": "2 microphones",
+        "volume": "1 KW sound",
+        "amount": "up to 50 people",
+        "text": "The Basic package already includes more professional equipment for creating better sound, including a sound engineer and the ability to use it for a small company."
+        },
+        {
+        "name": "Party",
+        "price": "17,000 CZK + VAT",
+        "time": "up to 6 hours",
+        "person": "DJ + Sound engineer",
+        "equipment": "",
+        "microphone": "4 microphones",
+        "volume": "4 KW sound",
+        "amount": "up to 200 people",
+        "text": "The 'Party' package includes all the components of the Basic package, as well as a DJ and sound engineer, an expanded song catalog, microphones, and the ability to use it for a large company."
+        },
+        {
+        "name": "Premium",
+        "price": "42,000 CZK + VAT",
+        "time": "up to 6 hours",
+        "person": "DJ + Sound engineer",
+        "equipment": "Screen and equipment",
+        "microphone": "4 microphones",
+        "volume": "4 KW sound",
+        "amount": "up to 200 people",
+        "text": "The Premium package includes all the services from the Basic and Party packages, as well as additional services such as professional lighting, screen and equipment, and the ability to use it for a large company."
+        }
+        ],
+        "title": "Prices",
+        "button": "Order"
+    },
+    "contacts": {
+    "title": "Contacts",
+    "address": "BOŘIVOJOVA 15 PRAHA 3, 13000 CZECH REPUBLIC",
+    "phone": "Phone",
+    "mail": "Email",
+    "book": "Book"
+    },
+    "faq": {
+        "cards": [
+        {
+        "question": "What condition is the karaoke equipment that you offer for rent in?",
+        "answer": "We offer acoustic systems from leading manufacturers such as Bose, Electro Voice, and Yamaha, which provide crystal clear and powerful sound at any party."
+        },
+        {
+        "question": "What type of microphones do you provide with the karaoke equipment?",
+        "answer": "We provide high-quality microphones that are specifically designed for karaoke, ensuring clear and crisp sound for all performers."
+        },
+        {
+        "question": "How many songs are included in your karaoke catalog?",
+        "answer": "Our karaoke catalog includes over 100,000 songs, covering a wide range of genres and artists to suit everyone's preferences."
+        },
+        {
+        "question": "Do you provide delivery and setup services for the karaoke equipment?",
+        "answer": "Yes, we offer delivery and setup services to ensure maximum convenience for our customers. Our team will deliver and set up the equipment at the venue, saving you time and effort."
+        },
+        {
+        "question": "Do you offer technical support during the event?",
+        "answer": "Yes, we provide technical support throughout the event to ensure that everything runs smoothly. Our sound engineer will be on hand to adjust the sound levels and troubleshoot any issues that may arise."
+        },
+        {
+        "question": "What is included in your premium karaoke package?",
+        "answer": "Our premium karaoke package includes all the services from our basic and party packages, as well as additional services such as professional lighting, an LED screen, and top-of-the-line equipment for larger events."
+        },
+        {
+        "question": "What is the maximum number of people that can use your karaoke equipment?",
+        "answer": "Our equipment can accommodate up to 200 people, making it perfect for large parties and events."
+        }
+        ]
+    },
+    "offer": {
+        "text": "We will develop a website for your business",
+        "connect": "Contact us"
+    }
+}

@@ -86,6 +86,7 @@ export class MainComponent implements OnInit {
   }
 
   changeLang(lang: string):void {
+    localStorage.setItem('lang', lang);
     this.translateService.use(lang);
     this.currentLang = lang;
   }
