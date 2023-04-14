@@ -1,9 +1,9 @@
 {
     "thanks": {
-        "title": "Pedido enviado, aguarde uma resposta por e-mail",
-        "text": "Você também pode entrar em contato conosco usando os links abaixo",
-        "textNumber": "Oder Sie können uns unter der Nummer kontaktieren",
-        "button": "Enviar novamente"
+        "title": "Anfrage gesendet, bitte warten Sie auf eine Antwort per E-Mail",
+        "text": "Alternativ können Sie uns über die untenstehenden Links kontaktieren",
+        "textNumber": "Oder kontaktieren Sie uns über die Nummer",
+        "button": "Erneut senden"
         },
     "main": {
         "title": "Mieten Sie Karaoke für jede Veranstaltung",

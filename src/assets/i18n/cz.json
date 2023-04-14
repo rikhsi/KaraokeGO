@@ -1,10 +1,10 @@
 {
     "thanks": {
-        "title": "Žádost odeslána, čekejte na odpověď e-mailem",
+        "title": "Žádost odeslána, prosím čekejte na odpověď e-mailem",
         "text": "Alternativně nás můžete kontaktovat pomocí odkazů níže",
-        "textNumber": "Nebo nás můžete kontaktovat na čísle",
+        "textNumber": "Nebo nás kontaktujte telefonicky",
         "button": "Odeslat znovu"
-        },
+    },
     "main": {
         "title": "Pronajměte si karaoke pro jakoukoli událost",
         "text": "Nabízíme profesionální karaoke sady pro jakoukoli událost: od domácích večírků a firemních akcí až po svatby a výročí. Najdete zde karaoke sady, které vyhovují vašim potřebám a rozpočtu.",
