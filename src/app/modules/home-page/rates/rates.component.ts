@@ -13,12 +13,18 @@ export class RatesComponent implements OnInit{
   target!: Rates | undefined;
   cards: Rates[] = [];
 
-  constructor(private translateService: TranslateService) {}
-
-  ngOnInit(): void {
+  constructor(private translateService: TranslateService) {
     this.translateService.get('rates.cards').subscribe(data => {
       this.cards = data;
     })
+  }
+
+  ngOnInit(): void {
+    this.translateService.onLangChange.subscribe(() => {
+      this.translateService.get('rates.cards').subscribe(data => {
+        this.cards = data;
+      });
+    });
   }
 
   showOfferModal(name:Rates | undefined): void {

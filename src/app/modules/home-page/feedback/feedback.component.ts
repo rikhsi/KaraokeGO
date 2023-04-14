@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { differenceInCalendarDays} from 'date-fns';
 import { Inputs } from 'src/app/models/inputs';
-
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'go-feedback',
@@ -52,7 +52,15 @@ export class FeedbackComponent implements OnInit{
 
   submit(): void {
     if (this.form.valid) {
-      console.log('submit', this.form.value);
+      emailjs.send('service_m5kpu9k', 'template_qamqqpd', {
+        name: this.form.controls['name'].value,
+        mail: this.form.controls['mail'].value,
+        calendar: this.form.controls['calendar'].value,
+        message: this.form.controls['message'].value
+      }, 'uzVFM_b-t4WV_Bpif')
+      .then(() => {
+        this.form.reset();
+      });
     } else {
       Object.values(this.form.controls).forEach(control => {
         if (control.invalid) {

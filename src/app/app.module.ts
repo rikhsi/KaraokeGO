@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { registerLocaleData } from '@angular/common';
-import ru from '@angular/common/locales/zh';
+import en from '@angular/common/locales/zh';
 
 
 //homePageModule
@@ -20,7 +20,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpLoaderFactory } from './services/translateFactory';
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 
-registerLocaleData(ru);
+registerLocaleData(en);
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ registerLocaleData(ru);
         useFactory: HttpLoaderFactory,
         deps: [HttpClient],
       },
-      defaultLanguage: 'ru',
+      defaultLanguage: 'en',
     }),
     HomePageModule,
 

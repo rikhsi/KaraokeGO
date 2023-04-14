@@ -33,15 +33,25 @@ export class BoonComponent implements OnInit {
 
   constructor(private translateService: TranslateService){
     SwiperCore.use([EffectFade]);
-  }
-
-  ngOnInit(): void {
     this.translateService.get('boon.cards').subscribe(data => {
       this.cards = data;
       this.cards.forEach((data, index) => {
         const firstImageIndex = index * 2 + 1;
         const secondImageIndex = index * 2 + 2;
         data.images = [`${firstImageIndex}.png`, `${secondImageIndex}.png`];
+      });
+    });
+  }
+
+  ngOnInit(): void {
+    this.translateService.onLangChange.subscribe(() => {
+      this.translateService.get('boon.cards').subscribe(data => {
+        this.cards = data;
+        this.cards.forEach((data, index) => {
+          const firstImageIndex = index * 2 + 1;
+          const secondImageIndex = index * 2 + 2;
+          data.images = [`${firstImageIndex}.png`, `${secondImageIndex}.png`];
+        });
       });
     });
   }

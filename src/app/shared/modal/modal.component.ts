@@ -5,6 +5,7 @@ import { differenceInCalendarDays} from 'date-fns';
 import { timer } from 'rxjs';
 import { Inputs } from 'src/app/models/inputs';
 import { Rates } from 'src/app/models/rates';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'go-modal',
@@ -52,6 +53,11 @@ export class ModalComponent implements OnInit , OnChanges{
       rate: [this.target?.name],
       message: [null, Validators.required]
     });
+    this.translateService.get('rates.cards').subscribe(data => {
+      this.rates = data;
+      this.target = data[0];
+    })
+    
   }
 
   handleCancel(): void {
@@ -59,10 +65,12 @@ export class ModalComponent implements OnInit , OnChanges{
   }
 
   ngOnInit(): void {
-    this.translateService.get('rates.cards').subscribe(data => {
-      this.rates = data;
-      this.target = data[0];
-    })
+    this.translateService.onLangChange.subscribe(() => {
+      this.translateService.get('rates.cards').subscribe(data => {
+        this.rates = data;
+        this.target = data[0];
+      })
+    });
     this.form.get('rate')?.valueChanges.subscribe((value) => {
       this.rates.find(data => {
         if(value === data.name){
@@ -83,7 +91,17 @@ export class ModalComponent implements OnInit , OnChanges{
 
   submit(): void {
     if (this.form.valid) {
-      console.log('submit', this.form.value);
+      emailjs.send('service_m5kpu9k', 'template_8y8rm8q', {
+        name: this.form.controls['name'].value,
+        mail: this.form.controls['mail'].value,
+        calendar: this.form.controls['calendar'].value,
+        rate: this.form.controls['rate'].value,
+        message: this.form.controls['message'].value
+      }, 'uzVFM_b-t4WV_Bpif')
+      .then(() => {
+        this.form.reset();
+        this.isClosed.emit();
+      });
     } else {
       Object.values(this.form.controls).forEach(control => {
         if (control.invalid) {

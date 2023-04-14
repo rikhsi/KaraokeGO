@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { fadeInOut } from 'src/app/animations/effects';
+import { Card } from 'src/app/models/adv';
 import { HelperService } from 'src/app/services/helper.service';
 
 
@@ -10,8 +11,14 @@ import { HelperService } from 'src/app/services/helper.service';
   animations: [fadeInOut]
 })
 
-export class HomePageComponent{
+export class HomePageComponent implements OnInit{
   public hideScroll$ = this.helperService.isVisible;
+  public advantages!: Card[];
 
-  constructor(private helperService: HelperService){}
+  constructor(private helperService: HelperService){
+    
+  }
+
+  ngOnInit(): void {
+  }
 }

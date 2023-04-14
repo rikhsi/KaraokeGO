@@ -116,6 +116,50 @@
     }
 }
 
+.thanks{
+    &__container{
+        max-width: 610px;
+        padding: 0 24px;
+    }
+    &__title{
+        text-align: center;
+        .text(500,36px,125%,@white);
+
+        @media (max-width:1199px) {
+            font-size: 24px;
+        }
+
+        @media (max-width:575px) {
+            font-size: 18px;
+        }
+    }
+    &__text{
+        text-align: center;
+        .text(400,20px,125%,@white);
+
+        @media (max-width:1199px) {
+            font-size: 15px;
+        }
+    }
+    &__button{
+        padding: 16px 24px;
+        border: 1px solid @grayishWhite;
+        border-radius: 16px;
+        background: @mainBlack;   
+        transition: 0.3s;
+        .text(500,20px,125%,@grayishWhite);   
+
+        &:hover{
+            transition: 0.3s;
+            border-color: @mainYellow;
+        }      
+
+        &:active{
+            animation:buttonPulse 0.3s 1 ;
+        }
+    }
+}
+
 
 [nz-input]{
     padding: 16px 24px;

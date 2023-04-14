@@ -22,7 +22,7 @@
                     </button>
                 </div>
                 <div nz-col class="main__hider">
-                    <button class="nav__button logo__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(buttonsList[0].link)">{{buttonsList[0].name}}</button>
+                    <button class="nav__button logo__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(buttonsList[0].link)">{{buttonsList[0].name | translate}}</button>
                 </div>
                 <div nz-col class="main__burger-hide">
                     <button class="burger" [ngClass]="isAnimateModal ? 'opened' : ''" (click)="openModal()">
@@ -69,8 +69,8 @@
     <div class="container nav__container">
         <div nz-row>
             <div nz-col>
-                <button  class="nav__button nav__hider" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(buttonsList[0].link)">{{buttonsList[0].name}}</button>
-                <button *ngFor="let button of buttonsList.slice(1)" class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(button.link)">{{button.name}}</button>
+                <button  class="nav__button nav__hider" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(buttonsList[0].link)">{{buttonsList[0].name | translate}}</button>
+                <button *ngFor="let button of buttonsList.slice(1)" class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(button.link)">{{button.name | translate}}</button>
             </div>
             <div nz-col>
                 <button nz-dropdown [nzDropdownMenu]="menu" nzTrigger="click" class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'">
@@ -118,32 +118,28 @@
                         </div>
                     </div>
                     <div class="modal__buttons">
-                        <button *ngFor="let button of buttonsList.slice(0,3)"  class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(button.link)">{{button.name}}</button>
+                        <button *ngFor="let button of buttonsList.slice(0,3)"  class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(button.link)">{{button.name | translate}}</button>
                     </div>
                     <ul class="modal__list">
                         <li>
-                            ТЕЛЕФОН:
-                            <a href="tel:+998990031497">+998990031497</a>
+                            {{'contacts.phone' | translate}}: 
+                            <a [href]="'tel:' + contactsList.phone">{{contactsList.phone}}</a>
                         </li>
                         <li>
-                            EMAIL: 
-                            <a href="mailto: INFO@BERTOLUCCI-SOUND.COM">
-                                INFO@BERTOLUCCI-SOUND.COM
-                            </a>
+                            {{'contacts.mail' | translate}}: 
+                            <a [href]="'mailto:' + contactsList.mail">{{contactsList.mail}}</a>
                         </li>
                         <li>
-                            БРОНЬ:
-                            <a href="mailto: INFO@BERTOLUCCI-SOUND.COM">
-                                BOOKING@BERTOLUCCI-SOUND.COM
-                            </a>
+                            {{'contacts.book' | translate}}: 
+                            <a [href]="'mailto:' + contactsList.book">{{contactsList.book}}</a>
                         </li>
                     </ul>
                     <div nz-row [nzGutter]="[0,16]">
                         <div nz-col nzSpan="24">
-                            <button class="modal__button" (click)="openLink()">Telegram</button>
+                            <button class="modal__button" (click)="openLink(linksList.whatsApp)">TikTok</button>
                         </div>
                         <div nz-col nzSpan="24">
-                            <button class="modal__button" (click)="openLink()">Instagram</button>
+                            <button class="modal__button" (click)="openLink(linksList.instagram)">Instagram</button>
                         </div>
                     </div>
                 </div>

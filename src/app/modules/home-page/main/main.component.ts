@@ -7,6 +7,7 @@ import { NavButton } from 'src/app/models/nav';
 import { mainImages } from 'src/assets/config/images';
 import SwiperCore, { EffectFade, Autoplay, SwiperOptions} from 'swiper';
 import { fadeInOut } from 'src/app/animations/effects';
+import { contacts, links } from 'src/assets/config/contacts';
 
 @Component({
   selector: 'go-main',
@@ -24,12 +25,12 @@ export class MainComponent implements OnInit {
   buttonsList: NavButton[] = [
     {
       id: 1,
-      name: 'ЦЕНЫ',
+      name: 'rates.title',
       link: 'rates'
     },
     {
       id: 2,
-      name: 'КТО МЫ',
+      name: 'about.title',
       link: 'about'
     },
     {
@@ -39,19 +40,22 @@ export class MainComponent implements OnInit {
     },
     {
       id: 4,
-      name: 'КОНТАКТЫ',
+      name: 'contacts.title',
       link: 'contacts'
     }    
   ];
   options: {lang: string}[] = [
     {
+      lang: 'en'
+    },
+    {
       lang: 'ru'
     },
     {
-      lang: 'uz'
+      lang: 'cz'
     },
     {
-      lang: 'en'
+      lang: 'de'
     }
   ]
   config: SwiperOptions = {
@@ -66,6 +70,8 @@ export class MainComponent implements OnInit {
     
   }
   photos: string[] = [];
+  linksList!: {whatsApp: string, instagram: string};
+  contactsList!: {phone: string , mail: string, book: string};
 
   constructor(private translateService: TranslateService, private helperService: HelperService){
     SwiperCore.use([EffectFade,Autoplay]);
@@ -75,6 +81,8 @@ export class MainComponent implements OnInit {
     timer(200).subscribe(() => this.isAnimate = false);
     this.currentLang = this.translateService.getDefaultLang();
     this.getGallery();
+    this.linksList = links;
+    this.contactsList = contacts;
   }
 
   changeLang(lang: string):void {
@@ -102,8 +110,8 @@ export class MainComponent implements OnInit {
     this.isAnimateModal = false;
   }
 
-  openLink():void{
-    timer(200).subscribe(() => window.open('', '_blank'))
+  openLink(link: string):void{
+    timer(200).subscribe(() => window.open(link, '_blank'))
   }
 
   showOfferModal(): void {

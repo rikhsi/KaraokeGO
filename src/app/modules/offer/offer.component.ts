@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { timer } from 'rxjs';
 import { SiliLinks } from 'src/assets/config/contacts';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'go-offer',
@@ -10,6 +11,7 @@ import { SiliLinks } from 'src/assets/config/contacts';
   styleUrls: ['./offer.component.less']
 })
 export class OfferComponent implements OnInit {
+  showThanks: boolean = false;
   linksList!: {whatsApp: string, instagram: string,telegram:string, be:string};
   form!: FormGroup;
   formInputs = {
@@ -51,7 +53,16 @@ export class OfferComponent implements OnInit {
 
   submit(): void {
     if (this.form.valid) {
-      console.log('submit', this.form.value);
+      emailjs.send('service_1f5g5tf', 'template_oid6l1f', {
+        name: this.form.controls['name'].value,
+        mail: this.form.controls['mail'].value,
+        phone: this.form.controls['phone'].value,
+        message: this.form.controls['message'].value
+      }, '87eFY-JSNG9ruBUxZ')
+      .then(() => {
+        this.form.reset();
+      });
+      this.showThanks = true;
     } else {
       Object.values(this.form.controls).forEach(control => {
         if (control.invalid) {
@@ -68,6 +79,10 @@ export class OfferComponent implements OnInit {
 
   openLink(link:string):void{
     timer(300).subscribe(() => window.open(link, '_blank'))
+  }
+
+  showForm():void{
+    timer(300).subscribe(() => this.showThanks = false)
   }
 
 }

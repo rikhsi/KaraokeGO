@@ -42,7 +42,7 @@
                         </nz-form-item>
                         <nz-form-item [nzGutter]="[0,{xl:16,lg:16,md:16,sm:8,xs:8}]">
                             <label nz-col nzSpan="24">
-                                <span class="form__label">{{'Выберите тариф'}}*</span>
+                                <span class="form__label">{{'feedback.inputs.seven.title' | translate}}*</span>
                             </label>
                             <nz-radio-group nz-col nzSpan="24" nzButtonStyle="solid" formControlName="rate">
                                 <label nz-radio-button [nzValue]="rate.name" *ngFor="let rate of rates">{{rate.name}}</label>

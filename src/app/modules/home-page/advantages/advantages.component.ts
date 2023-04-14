@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { advantagesImages } from '../../../../assets/config/images';
 import { Card } from 'src/app/models/adv';
@@ -13,7 +13,15 @@ export class AdvantagesComponent implements OnInit{
   active = new Set<number>();
   NotallActive: boolean = false;
 
-  constructor(private translateService: TranslateService){}
+  constructor(private translateService: TranslateService){
+    this.translateService.get('advantages.cards').subscribe(data => {
+      this.cards = data;
+      const images = advantagesImages;
+      this.cards.forEach((d,i) => {
+        d.bg = images[i]
+      })
+    })
+  }
 
   onMouseEnter(block: Element,id: number) {
     const blocks = document.querySelectorAll('.adv__card');
@@ -39,12 +47,18 @@ export class AdvantagesComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.translateService.get('advantages.cards').subscribe(data => {
-      this.cards = data;
-      const images = advantagesImages;
-      this.cards.forEach((d,i) => {
-        d.bg = images[i]
-      })
-    })
+    this.translateService.onLangChange.subscribe(() => {
+      this.translateService.get('advantages.cards').subscribe(data => {
+        this.cards = data;
+        const images = advantagesImages;
+        this.cards.forEach((d,i) => {
+          d.bg = images[i]
+        })
+      });
+    });
+  }
+
+  getLang():void{
+    
   }
 }

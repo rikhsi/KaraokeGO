@@ -22,6 +22,7 @@
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.43",
     "ng-zorro-antd": "^15.0.3",

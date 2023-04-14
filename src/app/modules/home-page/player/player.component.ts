@@ -15,6 +15,6 @@ export class PlayerComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = youtubeID;
-    this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube-nocookie.com/embed/" + this.id +  '?controls=0&rel=0&modestbranding=1');
+    this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube-nocookie.com/embed/" + this.id +  '?rel=0');
   }
 }

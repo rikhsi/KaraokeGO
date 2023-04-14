@@ -17,12 +17,18 @@ export class FaqComponent implements OnInit {
   activeFaqs = new Set<number>();
   faqs:Faq[] = [];
 
-  constructor(private translateService: TranslateService) {}
-
-  ngOnInit(): void {
+  constructor(private translateService: TranslateService) {
     this.translateService.get('faq.cards').subscribe(data => {
       this.faqs = data;
     })
+  }
+
+  ngOnInit(): void {
+    this.translateService.onLangChange.subscribe(() => {
+      this.translateService.get('faq.cards').subscribe(data => {
+        this.faqs = data;
+      });
+    });
   }
 
   toggle(id: number):void {
