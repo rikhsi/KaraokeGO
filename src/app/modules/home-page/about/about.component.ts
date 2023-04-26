@@ -19,8 +19,10 @@ export class AboutComponent implements OnInit {
     slidesPerView: 'auto',
     effect: 'fade',
     grabCursor: true,
+    autoHeight: true,
     autoplay: {
       delay: 7000,
+      
       disableOnInteraction: false
     },
     loop: true

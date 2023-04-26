@@ -21,12 +21,12 @@
         </div>
     </div>
     <div nz-col nzXs="24" nzXl="12">
-        <div class="about__img">
-            <swiper [config]="config">
-                <ng-template swiperSlide *ngFor="let photo of photos">
+        <swiper [config]="config" class="swiper">
+            <ng-template swiperSlide *ngFor="let photo of photos">
+                <div class="about__img">
                     <img nz-image [nzSrc]="'../../../../assets/img/about/' + photo" [nzFallback]="fallback" alt="about">
-                </ng-template>
-            </swiper>
-        </div>
+                </div>
+            </ng-template>
+        </swiper>
     </div>
 </div>
