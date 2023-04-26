@@ -119,17 +119,17 @@
             "time": "až 24 hodin",
             "person": "",
             "equipment": "",
-            "microphone": "2 mikrofony",
+            "microphone": "2 mikrofony, 4 party světla",
             "volume": "500 W zvuk",
-            "amount": "až 20 osob",
-            "text": "Tento balíček je určen pro domácí použití. Zahrnuje minimální komponenty pro organizaci karaoke party, včetně mikrofonů, zvukového systému a možnosti použití pro malou skupinu lidí."
+            "amount": "až 20 lidí",
+            "text": "Tento balíček je navržen pro domácí použití. Zahrnuje minimální komponenty pro uspořádání karaoke party, včetně mikrofonů, party světel, zvukového systému a možnosti použít jej pro malou skupinu lidí."
             },
             {
             "name": "Základní",
             "price": "10 000 Kč + DPH",
             "time": "až 6 hodin",
             "person": "Zvukový technik",
-            "equipment": "",
+            "equipment": "LED televize 50 palců",
             "microphone": "2 mikrofony",
             "volume": "1 KW zvuk",
             "amount": "až 50 osob",
@@ -170,34 +170,34 @@
     },
     "faq": {
         "cards": [
-        {
-        "question": "V jakém stavu je karaoke zařízení, které nabízíte k pronájmu?",
-        "answer": "Nabízíme akustické systémy od předních výrobců, jako jsou Bose, Electro Voice a Yamaha, které poskytují křišťálově čistý a výkonný zvuk na jakékoliv párty."
-        },
-        {
-        "question": "Jaké typy mikrofonů poskytujete s karaoke zařízením?",
-        "answer": "Poskytujeme vysoce kvalitní mikrofony speciálně navržené pro karaoke, zajišťující jasný a čistý zvuk pro všechny vystupující."
-        },
-        {
-        "question": "Kolik písní je zahrnuto ve vašem katalogu karaoke?",
-        "answer": "Náš katalog karaoke zahrnuje více než 100 000 písní, pokrývající širokou škálu žánrů a umělců, aby vyhovovala preferencím každého."
-        },
-        {
-        "question": "Poskytujete doručovací a instalatérské služby pro karaoke zařízení?",
-        "answer": "Ano, nabízíme doručovací a instalatérské služby pro zajištění maximální pohodlnosti našim zákazníkům. Náš tým dodá zařízení na místo a nainstaluje ho, ušetří vám čas a úsilí."
-        },
-        {
-        "question": "Poskytujete technickou podporu během akce?",
-        "answer": "Ano, poskytujeme technickou podporu během celé akce, abychom zajistili plynulý průběh. Náš zvukař bude k dispozici k úpravě hlasitosti a řešení případných problémů."
-        },
-        {
-        "question": "Co je zahrnuto v vašem prémiovém balíčku karaoke?",
-        "answer": "Náš prémiový balíček karaoke zahrnuje všechny služby z našich základních a párty balíčků, stejně jako další služby, jako jsou profesionální osvětlení, LED obrazovka a prvotřídní vybavení pro větší akce."
-        },
-        {
-        "question": "Jaký je maximální počet osob, které mohou používat vaše karaoke zařízení?",
-        "answer": "Naše zařízení umožňuje až 200 lidem, což je ideální pro velké oslavy a akce."
-        }
+            {
+            "question": "Jaké typy zvukového vybavení a karaoke jsou k dispozici k pronájmu?",
+            "answer": "Profesionální zařízení od firem Bose a Electro Voice. Karaoke systémy od společnosti Your Day s celkovou databází přes 100 000 písní (v angličtině, češtině, ruštině, ukrajinštině, italštině, španělštině, francouzštině, němčině a dalších)."
+            },
+            {
+            "question": "Jaké jsou náklady a podmínky pronájmu zvukového vybavení a karaoke?",
+            "answer": "Ceny začínají od 4 500 Kč. Podmínky: objednávka, dodání, platba prostřednictvím faktury po akci."
+            },
+            {
+            "question": "Jaké jsou možnosti doručení a instalace zvukového vybavení a karaoke na akci?",
+            "answer": "Doručení karaoke je k dispozici po celé České republice a Evropě."
+            },
+            {
+            "question": "Jaké dodatečné služby a možnosti jsou poskytovány při pronájmu zvukového vybavení a karaoke?",
+            "answer": "Plná technická podpora pro akci (zvuk, osvětlení, multimédia)."
+            },
+            {
+            "question": "Jak dlouho je možné pronajmout zvukové zařízení a karaoke?",
+            "answer": "Pronájem karaoke je k dispozici na celý večer, několik dní nebo na 24 hodin."
+            },
+            {
+            "question": "Jak probíhá platba za pronájem zvukového vybavení a karaoke?",
+            "answer": "Platba za pronájem karaoke se provádí po akci. Přijímají se hotovostní a bezhotovostní platby, platby prostřednictvím faktury a fakturační platby."
+            },
+            {
+            "question": "Jaké jsou podmínky zrušení nebo změny objednávky pronájmu zvukového vybavení a karaoke?",
+            "answer": "Podmínky zrušení nebo změny objednávky pronájmu zvukového vybavení a karaoke závisí na společnosti a smlouvě. Obvykle existuje určité období před začátkem pronájmu, kdy je povoleno bezplatné zrušení nebo úprava objednávky."
+            }
         ]
     },
     "offer": {

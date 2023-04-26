@@ -1,13 +1,13 @@
-import { Component, OnInit} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { timer } from 'rxjs';
 import { Pulse } from 'src/app/animations/buttons';
 import { HelperService } from 'src/app/services/helper.service';
 import { NavButton } from 'src/app/models/nav';
-import { mainImages } from 'src/assets/config/images';
-import SwiperCore, { EffectFade, Autoplay, SwiperOptions} from 'swiper';
 import { fadeInOut } from 'src/app/animations/effects';
 import { contacts, links } from 'src/assets/config/contacts';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { youtubeID } from 'src/assets/config/youtube';
 
 @Component({
   selector: 'go-main',
@@ -15,8 +15,10 @@ import { contacts, links } from 'src/assets/config/contacts';
   styleUrls: ['./main.component.less'],
   animations: [Pulse , fadeInOut]
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements OnInit{
   isOfferModal: boolean = false;
+  id!: string;
+  safeSrc!: SafeResourceUrl;
   fallback: string = '../../../../assets/img/fallback.jpg';
   isModalVisible:boolean = false;
   isAnimateModal: boolean = false;
@@ -58,29 +60,17 @@ export class MainComponent implements OnInit {
       lang: 'de'
     }
   ]
-  config: SwiperOptions = {
-    slidesPerView: 'auto',
-    effect: 'fade',
-    grabCursor: true,
-    autoplay: {
-      delay: 7000,
-      disableOnInteraction: false
-    },
-    loop: true
-    
-  }
-  photos: string[] = [];
   linksList!: {whatsApp: string, instagram: string};
   contactsList!: {phone: string , mail: string, book: string};
 
-  constructor(private translateService: TranslateService, private helperService: HelperService){
-    SwiperCore.use([EffectFade,Autoplay]);
+  constructor(private translateService: TranslateService, private helperService: HelperService,private sanitizer: DomSanitizer){
+    this.id = youtubeID;
+    this.safeSrc = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube-nocookie.com/embed/" + this.id + "?rel=0&autoplay=1&mute=1");
   }
 
   ngOnInit(): void {
     timer(200).subscribe(() => this.isAnimate = false);
     this.currentLang = this.translateService.getDefaultLang();
-    this.getGallery();
     this.linksList = links;
     this.contactsList = contacts;
   }
@@ -89,10 +79,6 @@ export class MainComponent implements OnInit {
     localStorage.setItem('lang', lang);
     this.translateService.use(lang);
     this.currentLang = lang;
-  }
-
-  getGallery(): void {
-    this.photos = mainImages;
   }
 
   openModal(): void {

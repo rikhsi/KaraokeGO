@@ -83,24 +83,6 @@
             }
         }
     }
-    &__img{
-        width: 100%;
-        height: 100%;
-        max-height: 560px;
-        overflow: hidden;
-        border-radius: 32px;
-        background: @grayishWhite;
-
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        @media (max-width:767px) {
-            max-height: 400px;
-        }
-    }
     &__hider{
         @media (max-width:1199px) {
             display: none;
@@ -130,6 +112,44 @@
             @media (max-width: 767px) {
                 display: flex;
             }
+        }
+    }
+}
+
+.player{
+    flex: 1 1 auto;
+    overflow: hidden;
+    border-radius: 32px;
+    background: @grayishWhite;
+
+    &__box{
+        width: 100%;
+        height: 100%;
+        flex: 1 1 auto;
+    }
+}
+
+.helper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+
+    &__box{
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex: 1 1 auto;
+        height: 530px;
+
+        @media (max-width:1199px) {
+            height: 400px;
+        }
+    }
+    &__first{
+        @media (max-width:1199px) {
+            display: none;
         }
     }
 }

@@ -22,7 +22,11 @@
     </div>
     <div nz-col nzXs="24" nzXl="12">
         <div class="about__img">
-            <img nz-image  [nzSrc]="'../../../../assets/img/about/' + photo" [nzFallback]="fallback" nzAlt="about">
+            <swiper [config]="config">
+                <ng-template swiperSlide *ngFor="let photo of photos">
+                    <img nz-image [nzSrc]="'../../../../assets/img/about/' + photo" [nzFallback]="fallback" alt="about">
+                </ng-template>
+            </swiper>
         </div>
     </div>
 </div>

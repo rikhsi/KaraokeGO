@@ -114,22 +114,22 @@
     "rates": {
         "cards": [
             {
-            "name": "Home",
+            "name": "Zuhause",
             "price": "4500 CZK - für Einzelpersonen",
             "time": "bis zu 24 Stunden",
             "person": "",
             "equipment": "",
-            "microphone": "2 Mikrofone",
-            "volume": "500 W Sound",
+            "microphone": "2 Mikrofone, 4 Party-Lichter",
+            "volume": "500 W Klang",
             "amount": "bis zu 20 Personen",
-            "text": "Dieses Paket ist für den Heimgebrauch konzipiert. Es enthält die minimalen Komponenten zur Organisation einer Karaoke-Party, einschließlich Mikrofonen, Sound-System und der Möglichkeit, es für eine kleine Gruppe von Personen zu nutzen."
+            "text": "Dieses Paket ist für den Gebrauch zu Hause konzipiert. Es umfasst die Mindestkomponenten für die Organisation einer Karaoke-Party, einschließlich Mikrofone, Party-Lichter, Soundsystem und der Möglichkeit, es für eine kleine Gruppe von Personen zu nutzen."
             },
             {
             "name": "Basic",
             "price": "10.000 CZK + MwSt.",
             "time": "bis zu 6 Stunden",
             "person": "Tontechniker",
-            "equipment": "",
+            "equipment": "LED Fernseher 50 Zoll",
             "microphone": "2 Mikrofone",
             "volume": "1 KW Sound",
             "amount": "bis zu 50 Personen",
@@ -171,32 +171,32 @@
     "faq": {
         "cards": [
             {
-            "question": "In welchem Zustand befindet sich die von Ihnen vermietete Karaoke-Ausrüstung?",
-            "answer": "Wir bieten akustische Systeme von führenden Herstellern wie Bose, Electro Voice und Yamaha an, die bei jeder Party kristallklaren und leistungsstarken Klang liefern."
+            "question": "Welche Arten von Tonanlagen und Karaoke-Systemen sind zur Miete verfügbar?",
+            "answer": "Professionelle Geräte von Bose und Electro Voice. Karaoke-Systeme von Your Day mit einer Gesamt-Datenbank von über 100.000 Songs (in Englisch, Tschechisch, Russisch, Ukrainisch, Italienisch, Spanisch, Französisch, Deutsch und mehr)."
             },
             {
-            "question": "Welche Art von Mikrofonen bieten Sie mit der Karaoke-Ausrüstung an?",
-            "answer": "Wir bieten hochwertige Mikrofone an, die speziell für Karaoke konzipiert sind und für alle Teilnehmer klaren und klaren Klang gewährleisten."
+            "question": "Was sind die Kosten und Mietbedingungen für Tonanlagen und Karaoke?",
+            "answer": "Die Preise beginnen bei 4.500 CZK. Bedingungen: Anmeldung, Lieferung, Zahlung per Rechnung nach der Veranstaltung."
             },
             {
-            "question": "Wie viele Songs sind in Ihrem Karaoke-Katalog enthalten?",
-            "answer": "Unser Karaoke-Katalog umfasst über 100.000 Songs und deckt eine breite Palette von Genres und Künstlern ab, um den Vorlieben jedes Einzelnen gerecht zu werden."
+            "question": "Welche Möglichkeiten gibt es für die Lieferung und Installation von Tonanlagen und Karaoke bei einer Veranstaltung?",
+            "answer": "Die Lieferung von Karaoke ist in ganz Tschechien und Europa verfügbar."
             },
             {
-            "question": "Bieten Sie Liefer- und Einrichtungsdienste für die Karaoke-Ausrüstung an?",
-            "answer": "Ja, wir bieten Liefer- und Einrichtungsdienste an, um maximalen Komfort für unsere Kunden zu gewährleisten. Unser Team wird die Ausrüstung am Veranstaltungsort liefern und einrichten und Ihnen Zeit und Mühe sparen."
+            "question": "Welche zusätzlichen Dienstleistungen und Optionen werden bei der Vermietung von Tonanlagen und Karaoke angeboten?",
+            "answer": "Vollständige technische Unterstützung für die Veranstaltung (Ton, Licht, Multimedia)."
             },
             {
-            "question": "Bieten Sie technischen Support während der Veranstaltung an?",
-            "answer": "Ja, wir bieten während der Veranstaltung technischen Support, um sicherzustellen, dass alles reibungslos abläuft. Unser Tontechniker wird zur Verfügung stehen, um die Klangpegel anzupassen und alle auftretenden Probleme zu beheben."
+            "question": "Wie lange können Tonanlagen und Karaoke gemietet werden?",
+            "answer": "Die Karaoke-Miete ist für einen ganzen Abend, mehrere Tage oder für 24 Stunden verfügbar."
             },
             {
-            "question": "Was ist in Ihrem Premium-Karaoke-Paket enthalten?",
-            "answer": "Unser Premium-Karaoke-Paket umfasst alle Leistungen unserer Basic- und Party-Pakete sowie zusätzliche Leistungen wie professionelle Beleuchtung, LED-Bildschirm und hochwertige Ausrüstung für größere Veranstaltungen."
+            "question": "Wie erfolgt die Zahlung für die Miete von Tonanlagen und Karaoke?",
+            "answer": "Die Zahlung für die Karaoke-Miete erfolgt nach der Veranstaltung. Barzahlungen und bargeldlose Zahlungen, Rechnungszahlungen und Fakturační platba sind alle akzeptiert."
             },
             {
-            "question": "Wie viele Personen können maximal Ihre Karaoke-Ausrüstung nutzen?",
-            "answer": "Unsere Ausrüstung kann bis zu 200 Personen aufnehmen und eignet sich daher perfekt für große Partys und Veranstaltungen."
+            "question": "Was sind die Bedingungen für die Stornierung oder Änderung einer Bestellung für die Vermietung von Tonanlagen und Karaoke?",
+            "answer": "Die Bedingungen für die Stornierung oder Änderung einer Bestellung für die Vermietung von Tonanlagen und Karaoke hängen von der Firma und der Vereinbarung ab. In der Regel gibt es eine bestimmte Frist vor Beginn der Miete, innerhalb derer eine kostenlose Stornierung oder Änderung möglich ist."
             }
         ]
     },

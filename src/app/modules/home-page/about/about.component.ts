@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { aboutImage } from 'src/assets/config/images';
+import SwiperCore, { EffectFade, Autoplay, SwiperOptions} from 'swiper';
 
 @Component({
   selector: 'go-about',
@@ -8,11 +9,29 @@ import { aboutImage } from 'src/assets/config/images';
 })
 export class AboutComponent implements OnInit {
   fallback: string = '../../../../assets/img/fallback.jpg';
-  photo: string = '';
+  photos: string[] = [];
 
-  constructor(){}
+  constructor(){
+    SwiperCore.use([EffectFade,Autoplay]);
+  }
+
+  config: SwiperOptions = {
+    slidesPerView: 'auto',
+    effect: 'fade',
+    grabCursor: true,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false
+    },
+    loop: true
+  }
 
   ngOnInit(): void {
-    this.photo = aboutImage;
+    this.getGallery();
   }
+
+    getGallery(): void {
+      this.photos = aboutImage;
+  }
+
 }

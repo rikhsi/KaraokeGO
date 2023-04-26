@@ -48,17 +48,13 @@
         </div>
     </div>
     <div nz-col nzXs="24" nzXl="12">
-        <div nz-row [nzGutter]="[0,16]">
-            <div nz-col nzXs="0" nzXl="24">
-                <ng-container [ngTemplateOutlet]="navBar"></ng-container>
-            </div>
-            <div nz-col nzSpan="24">
-                <div class="main__img">
-                    <swiper [config]="config">
-                        <ng-template swiperSlide *ngFor="let photo of photos">
-                            <img nz-image [nzSrc]="'../../../../assets/img/main/' + photo" [nzFallback]="fallback" alt="main">
-                        </ng-template>
-                    </swiper>
+        <div class="helper">
+            <div class="helper__box">
+                <div class="helper__first">
+                    <ng-container [ngTemplateOutlet]="navBar"></ng-container>
+                </div>
+                <div  class="player">
+                    <iframe [src]="safeSrc" frameborder="0" lang="en" autoplay="1" allowfullscreen class="player__box"></iframe>
                 </div>
             </div>
         </div>
