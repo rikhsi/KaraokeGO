@@ -130,33 +130,33 @@
             "time": "bis zu 6 Stunden",
             "person": "Tontechniker",
             "equipment": "LED Fernseher 50 Zoll",
-            "microphone": "2 Mikrofone",
+            "microphone": "2 Mikrofone, 4 Party-Lichter",
             "volume": "1 KW Sound",
             "amount": "bis zu 50 Personen",
             "text": "Das Basic-Paket enthält bereits professionellere Ausrüstung zur Erzeugung besserer Klangqualität, einschließlich eines Tontechnikers und der Möglichkeit, es für eine kleine Gesellschaft zu nutzen."
             },
             {
-            "name": "Party",
-            "price": "17.000 CZK + MwSt.",
-            "time": "bis zu 6 Stunden",
-            "person": "DJ + Tontechniker",
-            "equipment": "",
-            "microphone": "4 Mikrofone",
-            "volume": "4 KW Sound",
-            "amount": "bis zu 200 Personen",
-            "text": "Das 'Party'-Paket enthält alle Komponenten des Basic-Pakets sowie einen DJ und Tontechniker, einen erweiterten Song-Katalog, Mikrofone und die Möglichkeit, es für eine große Gesellschaft zu nutzen."
-            },
-            {
-            "name": "Premium",
-            "price": "42.000 CZK + MwSt.",
-            "time": "bis zu 6 Stunden",
-            "person": "DJ + Tontechniker",
-            "equipment": "Bildschirm und Ausrüstung",
-            "microphone": "4 Mikrofone",
-            "volume": "4 KW Sound",
-            "amount": "bis zu 200 Personen",
-            "text": "Das Premium-Paket umfasst alle Leistungen der Basic- und Party-Pakete sowie zusätzliche Leistungen wie professionelle Beleuchtung, Bildschirm und Ausrüstung und die Möglichkeit, es für eine große Gesellschaft zu nutzen."
-            }
+                "name": "Party",
+                "price": "17.000 czk + MwSt.",
+                "time": "bis zu 6 Stunden",
+                "person": "DJ, Tontechniker und Lichttechniker",
+                "equipment": "Großer Bildschirm 3,5m x 2m + 50 Zoll, professionelle Bühnenbeleuchtung.",
+                "microphone": "4 Mikrofone",
+                "volume": "Sound 4 kW",
+                "amount": "bis zu 200 Personen",
+                "text": "In diesem Paket bieten wir die Vermietung eines Karaoke-Systems mit leistungsstarkem Sound und Mikrofonen für eine große Anzahl von Teilnehmern an. Darüber hinaus sind DJ-Services enthalten, die nicht nur schön singen, sondern auch mit ihrer Performance die Menge anheizen werden."
+                },
+                {
+                "name": "Premium",
+                "price": "42.000 czk + MwSt.",
+                "time": "bis zu 6 Stunden",
+                "person": "DJ, Tontechniker und Lichttechniker",
+                "equipment": "Großer Bildschirm 3,5m x 2m + 50 Zoll, professionelle Bühnenbeleuchtung.",
+                "microphone": "4 Mikrofone",
+                "volume": "Sound 4 kW",
+                "amount": "bis zu 200 Personen",
+                "text": "Das Premium-Paket ist eine luxuriöse Ausstattung für Galaveranstaltungen und verwandelt Karaoke-Auftritte in eine Show auf hohem Niveau. Es bietet exzellenten Sound und helle Lichteffekte, die Eleganz und Einzigartigkeit zu Ihrer Veranstaltung hinzufügen. Fühlen Sie sich wie ein Star mit unserem Premium-Paket."
+                }
         ],
         "title": "Preise",
         "button": "Bestellen"
