@@ -10,9 +10,6 @@
         flex-direction: column;
         gap: 24px;
         height: 100%;                  
-        @media (max-width:1199px) {
-            height: 400px;
-        }
     }
     &__img{
         width: 100%;
@@ -26,8 +23,21 @@
             object-fit: cover;
         }
 
-        @media (max-width: 1199px) {
-            height: 400px;
+        @media (max-width:1199px) { 
+            img{
+                min-height: auto;
+                object-fit: cover;
+                max-height: 400px;
+            }
+        }
+
+        @media (max-width: 700px) {
+           
+            img{
+                object-fit: contain;
+                min-height: auto;
+                max-height: auto;
+            }
         }
     }
 }
@@ -51,9 +61,9 @@
 
 .boxes{
     &__first{
+        justify-content: space-between;
         grid-row: 1 / span 1;
         grid-column: 1 / span 2;
-        justify-content: space-between;
         background-color: @mainBlack;
         .text(500,16px,125%,@white);
     }
@@ -63,6 +73,10 @@
         grid-row: 2 / span 2;
         grid-column: 1 / span 2;
         .text(500,24px,125%,@white);
+
+        @media (max-width:1199px) {
+            justify-content: start;
+        }
     }
     &__title{
         color: @white;
@@ -81,4 +95,5 @@
     position: absolute;
     top: -40px;
     right: -70px;
+    opacity: 0.7;
 }

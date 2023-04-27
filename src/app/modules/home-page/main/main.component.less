@@ -118,13 +118,12 @@
 
 .player{
     flex: 1 1 auto;
-    overflow: hidden;
-    border-radius: 32px;
-    background: @grayishWhite;
 
     &__box{
         width: 100%;
         height: 100%;
+        border-radius: 32px;
+        overflow: hidden;
         flex: 1 1 auto;
     }
 }
@@ -312,6 +311,8 @@
 }
 
 [nz-menu-item]{
+    position: relative;
+    z-index: 1000000000;
     text-transform: uppercase;
     .text(400,20px,125%,@mainBlack); 
     

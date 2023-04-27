@@ -2,14 +2,12 @@ export const aboutImage =  [
     "1.jpg", 
     "2.jpg",
     "3.jpg",
-    "4.jpg",
-    "5.jpg"
 ]
 
 export const advantagesImages = [
-    "1.png",
-    "2.png",
-    "3.png"
+    "4.jpg",
+    "5.jpg",
+    "6.jpg"
 ]
 
 export const boonImages = [
