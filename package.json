@@ -21,6 +21,7 @@
     "@angular/youtube-player": "^15.2.6",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
+    "@types/youtube": "^0.0.47",
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "moment": "^2.29.4",

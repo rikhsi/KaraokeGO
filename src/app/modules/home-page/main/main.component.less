@@ -11,7 +11,7 @@
         background-color: @mainOrange;
 
         @media (max-width:1199px) {
-            height: 560px;
+            min-height: 560px;
 
             [nz-row]{
                 justify-content: center;
@@ -83,6 +83,27 @@
             }
         }
     }
+    &__img{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 32px;
+        background: @grayishWhite;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width:1199px) {
+      
+        }
+
+        @media (max-width:767px) {
+            max-height: 400px;
+        }
+    }
     &__hider{
         @media (max-width:1199px) {
             display: none;
@@ -111,64 +132,52 @@
 
             @media (max-width: 767px) {
                 display: flex;
+                flex-direction: column;
+                gap: 24px;
+                align-items: center;
             }
         }
     }
-}
-
-.player{
-    flex: 1 1 auto;
-
-    &__box{
-        width: 100%;
-        height: 100%;
-        border-radius: 32px;
-        overflow: hidden;
-        flex: 1 1 auto;
+    &__helper{
+        @media (max-width:1199px) {
+            justify-content: center !important;   
+        }
     }
 }
 
-.helper{
+.img{
+    object-fit: cover;
+}
+
+.content{
     width: 100%;
     height: 100%;
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
+    gap: 16px;
 
-    &__box{
-
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        flex: 1 1 auto;
-        height: 530px;
-
-        @media (max-width:1199px) {
-            height: 400px;
-        }
-    }
-    &__first{
-        @media (max-width:1199px) {
+    &__1{
+        @media (max-width: 1199px) {
             display: none;
         }
     }
 }
 
-
 .logo{
+    &__hider{
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
     &__title{
+        width: auto;
+        height: auto;
         padding: 0;
         background: inherit;
         border: none;
 
         &:active{
             animation: buttonPulse 0.2s 1;
-        }
-
-        @media (max-width:767px) {
-            svg {
-                width: 168px;
-                height: 24px;
-            }
         }
     }
     &__button{

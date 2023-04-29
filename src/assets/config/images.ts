@@ -1,3 +1,9 @@
+export const mainImages =[
+    "1.jpg",
+    "2.jpg",
+    "3.jpg"
+]
+
 export const aboutImage =  [
     "1.jpg", 
     "2.jpg",

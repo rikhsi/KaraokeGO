@@ -1,8 +1,12 @@
+@import '../../../styles/colors.less';
+
 .player{
     &__content{
+        position: relative;
         width: 100%;
         height: 680px;
         border-radius: 32px;
+        overflow: hidden;
 
         @media (max-width:1199px) {
             height: 400px;
@@ -10,6 +14,35 @@
 
         @media (max-width:767px) {
             height: 600px;
+        }
+    }
+    &__cover{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: @mainYellow;
+    }
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: @grayishWhite;
+        
+        img{
+            object-fit: cover;
         }
     }
 }
