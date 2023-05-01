@@ -223,7 +223,7 @@
         }
 
         &:active{
-            animation: buttonPulse 0.2s 1;
+            animation: buttonPulse 0.3s 1;
         }
         
         &-icon{
@@ -280,6 +280,7 @@
         width: 100%;
         padding: 12px;
         height: 100vh;
+        overflow: hidden;
         background-color: @white;
     }
     &__box{
@@ -287,7 +288,7 @@
         display: flex;
         overflow: scroll;
         flex-direction: column;
-        gap: 64px;
+        gap: 40px;
         padding: 24px;
         border-radius: 32px;
         background-color: @mainBlack;
@@ -302,7 +303,7 @@
     &__scroll{
         display: flex;
         flex-direction: column;
-        gap: 64px;
+        gap: 40px;
     }
     &__buttons{
         display: flex;
@@ -339,9 +340,15 @@
         }
     }
     &__title{
-        svg{
-            width: 253px;
-            height: 37px;
+        padding: 0;
+        background: inherit;
+        border: none;
+        background-color: inherit;
+
+        img{
+            width: auto;
+            height: 50px;
+            object-fit: contain !important;
         }
     }
 }

@@ -118,13 +118,13 @@
         <div class="modal__container">
             <div class="modal__box">   
                 <div nz-row nzJustify="center">
-                    <button class="logo__title modal__title" nz-row nzAlign="middle" (click)="hideModal()">
-                        <img src="../../../../assets/img/logotitle.png" alt="" style="object-fit: contain;">
+                    <button class="modal__title" (click)="hideModal()">
+                        <img src="../../../../assets/img/logotitle.png" alt="">
                     </button>
                 </div>
                 <div class="modal__scroll">
                     <div class="modal__buttons">
-                        <button *ngFor="let button of buttonsList.slice(0,3)"  class="nav__button" [@pulse]="isAnimate ? 'pulse' : 'normal'" (click)="navigate(button.link)">{{button.name | translate}}</button>
+                        <button *ngFor="let button of buttonsList.slice(0,3)"  class="nav__button" (click)="navigate(button.link)">{{button.name | translate}}</button>
                     </div>
                     <ul class="modal__list">
                         <li>

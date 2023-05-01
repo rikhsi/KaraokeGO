@@ -100,7 +100,7 @@ export class MainComponent implements OnInit{
   }
 
   hideModal(): void {
-    timer(100).subscribe(() => {
+    timer(300).subscribe(() => {
       this.isModalVisible = false;
     })
     this.helperService.showScroll();
