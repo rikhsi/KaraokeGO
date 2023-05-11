@@ -25,7 +25,20 @@ export class AboutComponent implements OnInit {
       
       disableOnInteraction: false
     },
-    loop: true
+    loop: true,
+  }
+
+  config2: SwiperOptions = {
+    slidesPerView: 'auto',
+    effect: 'fade',
+    autoHeight: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 7000,
+      
+      disableOnInteraction: false
+    },
+    loop: true,
   }
 
   ngOnInit(): void {
