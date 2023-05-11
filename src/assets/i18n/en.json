@@ -68,10 +68,10 @@
         "confirm": "By submitting this form, you consent to the processing of personal data."
     },
     "about": {
-        "title": "Who we are",
+        "title": "WHO WE ARE",
         "texts": {
-        "first": "We are a team of people who are obsessed with good sound. For 8 years, we have been providing technical support for events: installing sound and lighting, selecting DJs and musicians. We organize karaoke on the go in Prague and anywhere in the Czech Republic and Europe.",
-        "second": "We believe that music is a very important part of any celebration. It sets and maintains the mood of the guests and our task is to provide you with that mood. We collaborate with leading artists and musicians in Europe and guarantee the quality of their work."
+        "first": "We are a team of people who are obsessed with quality sound. For 15 years we have been providing technical support for events: sound and lighting installation, selection of DJs and musicians. We organize karaoke parties not only in Prague, but also all over the Czech Republic and Europe.",
+        "second": "We believe that music is a key part of any celebration. Our goal is to make sure that your party has the right atmosphere and that your guests enjoy themselves to the fullest. That's why we work with the leading artists, musicians, sound engineers, lighting technicians and other event professionals in Europe. We guarantee the quality of our professionals' work and strive to meet all your requirements."
         }
     },
     "boon": {
@@ -79,83 +79,71 @@
         "cards": [
         {
         "title": "Karaoke system with video display",
-        "text": "Instead of just reading the lyrics on the screen, the video display shows clips or animations that correspond to the song. This creates a more engaging and interactive experience for users, helping them better immerse themselves in the music."
+        "text": "Instead of just displaying the lyrics on the screen, we offer a karaoke system with a video display that shows clips or animations corresponding to the song. This allows users to enjoy a more entertaining and interactive experience, helping them to better enjoy karaoke parties and delivering a true musical performance experience"
         },
         {
-        "title": "55-inch screen",
-        "text": "A large screen provides comfortable viewing of song lyrics for all participants. In addition, a large screen makes it easier to read song lyrics for people with weak eyesight."
+        "title": "Large screens for the ultimate experience: 50 inch LED TV up to 3x5m large LED screen",
+        "text": "We have a 55 inch TV screen and up to a 3x5 meter large LED screen, which make it convenient to display the lyrics of the songs for all participants. The large screen also makes it easier for people with low vision to read the lyrics."
         },
         {
-        "title": "Powerful acoustic system from Bose, Electro Voice, Yamaha",
-        "text": "Powerful acoustic systems can provide higher sound quality than ordinary audio systems. This is particularly important for karaoke, as good sound is a necessary condition for users to sing songs and enjoy the music."
+        "title": "Song catalogue - over 100,000 hits",
+        "text": "More than 100,000 hits in the song catalogue in different languages (ENG, CZ, SK, PL, RU, UKR, IT, ES, DE and more ) offer a huge selection of music for karaoke performances. Thanks to this wide range of songs, the preferences of all participants, who may have different musical preferences and interests, can be satisfied."
         },
         {
-        "title": "Song catalog - over 100,000 hits",
-        "text": "A catalog of 100,000 songs provides users with a huge selection of music to perform. This allows you to satisfy the requests of any participants who may have different preferences in genres and performers."
+            "title": "Up to 5 wireless microphones with good sound quality for karaoke parties",
+            "text": "We use only the best brands Shure, Sennheiser , JBL and more which are great choices for karaoke parties Microphones with cardioid routing and excellent sound quality. It's a great choice for karaoke parties because the microphones have excellent sensitivity and are easy to use."
         },
         {
-        "title": "3 microphones with good sound",
-        "text": "Delivery and installation services provide maximum convenience for customers, who can be sure that the equipment will be delivered and installed on site without the need to spend their time and effort organizing and setting up the equipment."
-        },
-        {
-        "title": "Sound engineer will do all the technical work",
-        "text": "The sound engineer has professional skills in the field of sound equipment and can set up all devices at the event for the best sound quality. He can also adjust the sound on the go to make the performers' voices sound as clear and crisp as possible."
-        },
-        {
-        "title": "Delivery - we will install it anywhere in Europe",
-        "text": "Delivery and installation services provide maximum convenience for customers, who can be sure that the equipment will be delivered and installed on site without the need to spend their time and effort organizing and setting up the equipment."
-        },
-        {
-        "title": "Voice processing",
-        "text": "Voice processing technology allows you to improve the sound quality, smoothing out flaws in the voice, eliminating noise and interference. This allows performers to sound more professional and expressive."
+        "title": "Delivery - we can install anywhere in Europe",
+        "text": "Shipping and installation on our part provide the ultimate convenience for customers, who can be assured that the equipment will be delivered and installed at the venue without having to spend time and effort organising and setting up the audio equipment. We'll arrange everything and your event will run smoothly and without a hitch. Additionally, should there be any issues with the equipment during the event, our technicians are on hand to assist and resolve any issues that may arise."
         }
         ]
     },
     "rates": {
         "cards": [
         {
-        "name": "Home",
-        "price": "4500 CZK - for individuals",
+        "name": "Home party",
+        "price": "4500 CZK - valid only for individuals",
         "time": "up to 24 hours",
         "person": "",
         "equipment": "",
         "microphone": "2 microphones, 4 party lights",
         "volume": "500 W sound",
         "amount": "up to 20 people",
-        "text": "This package is designed for home use. It includes the minimum components for organizing a karaoke party, including microphones, party lights, sound system, and the ability to use it for a small group of people."
+        "text": "This package is designed for home use. It includes the minimum components to host a karaoke party, including microphones, party lights, sound system and the ability to enjoy a karaoke party at home."
         },
         {
         "name": "Basic",
-        "price": "10,000 CZK + VAT",
+        "price": "10 000 CZK + VAT",
         "time": "up to 6 hours",
-        "person": "Sound engineer",
-        "equipment": "Led TV 50 inches",
+        "person": "Sound technician",
+        "equipment": "LED TV 50 inches",
         "microphone": "2 microphones, 4 party lights",
         "volume": "1 KW sound",
-        "amount": "up to 50 people",
-        "text": "The Basic package already includes more professional equipment for creating better sound, including a sound engineer and the ability to use it for a small company."
+        "amount": "Up to 50 people",
+        "text": "The basic package includes professional equipment to create a better atmosphere, including a sound technician and the option to use karaoke for a smaller number of people."
         },
         {
             "name": "Party",
-            "price": "17 000 czk + VAT",
+            "price": "17 000 CZK + VAT",
             "time": "up to 6 hours",
-            "person": "DJ, sound technician, and lighting technician",
-            "equipment": " Large screen 3.5m x 2m + 50 inches, professional stage lighting.",
+            "person": "DJ and sound engineer",
+            "equipment": " LED TV 50 inches",
             "microphone": "4 microphones",
             "volume": "Sound 4 kW",
-            "amount": "up to 200 people",
-            "text": "In this package, we offer rental of a karaoke system with powerful sound and microphones for a large number of participants. Additionally, DJ services are included, who will help not only sing beautifully but also pump up the crowd with their performance."
+            "amount": "Up to 200 people",
+            "text": "In this offer we offer karaoke system rental with powerful sound and microphones for a large number of participants. In addition, DJ services are included, (possibility to play and party during breaks, songs on request, creating a better atmosphere for karaoke parties)"
         },
         {
             "name": "Premium",
-            "price": "42 000 czk + VAT",
+            "price": "42 000 CZK + VAT",
             "time": "up to 6 hours",
-            "person": "DJ, sound technician, and lighting technician",
-            "equipment": " Large screen 3.5m x 2m + 50 inches, professional stage lighting.",
+            "person": "DJ and sound technician, lighting technician",
+            "equipment": "Large projection 3,5 m x 2 m + Led TV 50 inches, professional lighting of the stage and dance floor.",
             "microphone": "4 microphones",
             "volume": "Sound 4 kW",
-            "amount": "up to 200 people",
-            "text": "The premium package is a luxurious setup for gala evenings, turning karaoke performances into a high-level show. It provides excellent sound and bright lighting effects, adding elegance and uniqueness to your event. Feel like a star with our premium package."
+            "amount": "Up to 200 people",
+            "text": "The Premium Package is a luxury set-up for corporate parties or galas that transforms karaoke performances into a high-level show. It provides excellent sound and bright lighting that adds elegance and uniqueness to your party. Be the star of the night with our premium package."
         }
         ],
         "title": "Prices",

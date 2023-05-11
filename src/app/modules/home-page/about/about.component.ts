@@ -18,7 +18,7 @@ export class AboutComponent implements OnInit {
   config: SwiperOptions = {
     slidesPerView: 'auto',
     effect: 'fade',
-    autoHeight: true,
+    autoHeight: false,
     grabCursor: true,
     autoplay: {
       delay: 7000,

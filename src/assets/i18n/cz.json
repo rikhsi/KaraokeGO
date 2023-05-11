@@ -6,23 +6,23 @@
         "button": "Odeslat znovu"
     },
     "main": {
-        "title": "Pronajměte si karaoke pro jakoukoli událost",
-        "text": "Nabízíme profesionální karaoke sady pro jakoukoli událost: od domácích večírků a firemních akcí až po svatby a výročí. Najdete zde karaoke sady, které vyhovují vašim potřebám a rozpočtu.",
+        "title": "Pronajměte si karaoke pro jakoukoliv akci",
+        "text": "Nabízíme profesionální karaoke sady pro jakoukoli událost: od domácích večírků a firemních akcí až po svatby a oslavy výročí. U nás najdete karaoke sady, které odpovídají vašim potřebám a rozpočtu.",
         "button": "Objednat"
         },
     "advantages": {
         "cards": [
         {
-        "title": "Mobilita",
-        "text": "Mobilita - dovezení a instalace karaoke systému na jakékoliv místo v Evropě."
+        "title": "MOBILITA",
+        "text": "Mobilita -doprava a instalace karaoke systému na jakékoliv místo v Evropě."
         },
         {
-        "title": "Široký výběr",
-        "text": "Více než 100 000 zahraničních a domácích písní pro každý vkus."
+        "title": "ŠIROKÝ VÝBĚR",
+        "text": "Více než 100 000 zahraničních a domácích skladeb pro každého."
         },
         {
-        "title": "Kvalita",
-        "text": "Zvukový technik nastaví vybavení a bude sledovat jeho provoz."
+        "title": "KVALITA",
+        "text": "Zvukový technik nastaví vybavení a zajistit provoz karaoke systému"
         }
         ]
     },
@@ -68,10 +68,10 @@
         "confirm": "Odesláním tohoto formuláře souhlasíte se zpracováním osobních údajů."
     },
     "about": {
-        "title": "Kdo jsme",
+        "title": "KDO JSME",
         "texts": {
-        "first": "Jsme tým lidí, kteří jsou posedlí kvalitním zvukem. Již 8 let poskytujeme technickou podporu pro akce: instalace zvuku a osvětlení, výběr DJů a hudebníků. Organizujeme karaoke na cestách v Praze a kdekoliv v České republice a Evropě.",
-        "second": "Věříme, že hudba je velmi důležitou součástí každé oslavy. Nastavuje a udržuje náladu hostů a naším úkolem je poskytnout Vám tu správnou náladu. Spolupracujeme s předními umělci a hudebníky v Evropě a garantujeme kvalitu jejich práce."
+        "first": "Jsme tým lidí, kteří jsou posedlí kvalitním zvukem. Již 15 let poskytujeme technickou podporu pro akce: instalace zvuku a osvětlení, výběr DJů a hudebníků. Organizujeme karaoke večírky nejen v Praze, ale také po celé České republice a Evropě",
+        "second": "Věříme, že hudba je klíčovou součástí každé oslavy. Naším cílem je zajistit, aby Vaše oslava měla tu správnou atmosféru a aby se hosté bavili naplno. Proto spolupracujeme s předními umělci, hudebníky, zvukaři, světelnými techniky a dalšími profesionály v oblasti eventů v Evropě. Garantujeme kvalitu práce našich profesionálů a snažíme se splnit veškeré Vaše požadavky."
         }
     },
     "boon": {
@@ -79,50 +79,38 @@
         "cards": [
             {
             "title": "Karaoke systém s video displejem",
-            "text": "Namísto pouhého čtení textů písní na displeji, video displej ukazuje klipy nebo animace, které odpovídají písni. To vytváří pro uživatele více zábavný a interaktivní zážitek, který jim pomáhá lépe se ponořit do hudby."
+            "text": "Místo pouhého zobrazení textů písní na displeji nabízíme karaoke systém s video displejem, který zobrazuje klipy nebo animace odpovídající dané písni. Díky tomu se uživatelé mohou těšit na více zábavný a interaktivní zážitek, který jim pomáhá lépe si užít karaoke party a přináší opravdový hudební zážitek vystoupení"
             },
             {
-            "title": "55 palcový displej",
-            "text": "Velký displej poskytuje pohodlné zobrazení textů písní pro všechny účastníky. Kromě toho velký displej usnadňuje čtení textů písní pro osoby s oslabeným zrakem."
+            "title": "Velké obrazovky pro dokonalý zážitek: 50 palcová LED TV až 3x5 m velká LED obrazovka",
+            "text": "Máme k dispozici 55 palcovou TV obrazovku a až 3x5 metrů velkou LED obrazovku, které umožňují pohodlné zobrazení textů písní pro všechny účastníky. Velký displej také usnadňuje čtení textů písní pro osoby s oslabeným zrakem."
             },
             {
-            "title": "Výkonný akustický systém od Bose, Electro Voice, Yamaha",
-            "text": "Výkonné akustické systémy mohou poskytovat lepší zvukovou kvalitu než běžné audio systémy. To je zvláště důležité pro karaoke, protože dobrý zvuk je nezbytnou podmínkou pro to, aby uživatelé mohli zpívat písně a užívat si hudbu."
+                "title": "Katalog písní - více než 100 000 hitů",
+                "text": "Více než 100 000 hitů v katalogu písní v různých jazycích (ENG, CZ, SK, PL, RU, UKR, IT, ES, DE a další ) nabízí obrovský výběr hudby pro karaoke vystoupení. Díky této široké škále písní mohou být uspokojeny preference všech účastníků, kteří mohou mít různé hudební preference a zájmy."
             },
             {
-            "title": "Katalog písní - více než 100 000 hitů",
-            "text": "Katalog 100 000 písní poskytuje uživatelům obrovský výběr hudby ke vystoupení. To umožňuje uspokojit požadavky všech účastníků, kteří mohou mít různé preference v žánrech a interpretech."
-            },
-            {
-            "title": "3 mikrofony s dobrou kvalitou zvuku",
-            "text": "Dodávkové a instalatérské služby poskytují maximální pohodlí pro zákazníky, kteří si mohou být jisti, že zařízení bude doručeno a nainstalováno na místě akce, aniž by museli trávit čas a úsilí organizováním a nastavováním zařízení."
-            },
-            {
-            "title": "Zvukový technik udělá veškerou technickou práci",
-            "text": "Zvukový technik má profesionální dovednosti v oblasti zvukového zařízení a může nastavit všechna zařízení na akci pro nejlepší zvukovou kvalitu. Může také upravovat zvuk během vystoupení, aby se hlas zpěváků co nejlépe projevil v čistotě a zřetelnosti."
+                "title": "Až 5 bezdrátových mikrofonů s dobrou kvalitou zvuku pro karaoke party",
+                "text": "Používáme jen nejlepší značky Shure,  Sennheiser , JBL a další, které jsou skvělou volbou pro karaoke party Mikrofony s kardioidním směrováním a vynikající kvalitou zvuku. Je to skvělá volba pro karaoke party, protože mikrofony mají vynikající citlivost a snadno se používají."
             },
             {
             "title": "Doručení - nainstalujeme kdekoli v Evropě",
-            "text": "Dodávkové a instalatérské služby poskytují maximální pohodlí pro zákazníky, kteří si mohou být jisti, že zařízení bude doručeno a nainstalováno na místě akce, aniž by museli trávit čas a úsilí organizováním a nastavováním zařízení."
-            },
-            {
-            "title": "Zpracování hlasu",
-            "text": "Technologie zpracování hlasu vám umožňuje zlepšit zvukovou kvalitu, vyhlazovat chyby v hlasu, eliminovat hluk a rušení. To umožňuje vystupujícím zpěvákům znít profesionálněji a výrazněji."
+            "text": "Doprava a instalace z naší strany poskytují maximální pohodlí pro zákazníky, kteří si mohou být jisti, že vybavení bude doručeno a nainstalováno na místě akce, aniž by museli trávit čas a úsilí organizováním a nastavováním zvukového zařízení. Všechno zajistíme a vaše akce bude probíhat hladce a bez problémů. Navíc, pokud by se v průběhu akce vyskytl nějaký problém s vybavením, naši technici jsou k dispozici, aby vám pomohli a vyřešili jakýkoli problém, který by mohl nastat."
             }
         ]
     },
     "rates": {
         "cards": [
             {
-            "name": "Domácí",
-            "price": "4500 Kč - pro jednotlivce",
+            "name": "Domácí party",
+            "price": "4500 Kč - platí jen pro fyzické osoby",
             "time": "až 24 hodin",
             "person": "",
             "equipment": "",
             "microphone": "2 mikrofony, 4 party světla",
             "volume": "500 W zvuk",
             "amount": "až 20 lidí",
-            "text": "Tento balíček je navržen pro domácí použití. Zahrnuje minimální komponenty pro uspořádání karaoke party, včetně mikrofonů, party světel, zvukového systému a možnosti použít jej pro malou skupinu lidí."
+            "text": "Tento balíček je navržen pro domácí použití. Zahrnuje minimální komponenty pro uspořádání karaoke party, včetně mikrofonů, party světel, zvukového systému a možnosti užit karaoke party v domácnosti."
             },
             {
             "name": "Základní",
@@ -133,29 +121,29 @@
             "microphone": "2 mikrofony, 4 party světla",
             "volume": "1 KW zvuk",
             "amount": "až 50 osob",
-            "text": "Základní balíček již zahrnuje profesionálnější vybavení pro vytvoření lepšího zvuku, včetně zvukového technika a možnosti použití pro malou společnost."
+            "text": "Základní balíček zahrnuje profesionální vybavení pro vytvoření lepší atmosféry, včetně zvukového technika a možnosti užit karaoke pro menší počet lidi"
             },
             {
-                "název": "Party",
-                "cena": "17 000 czk + DPH",
-                "čas": "do 6 hodin",
-                "osoba": "DJ, zvukový technik a světelný technik",
-                "vybavení": "Velká obrazovka 3,5m x 2m + 50 palců, profesionální osvětlení jeviště.",
-                "mikrofon": "4 mikrofony",
-                "hlasitost": "Zvuk 4 kW",
-                "počet": "až 200 osob",
-                "text": "V tomto balíčku nabízíme pronájem karaoke systému s výkonným zvukem a mikrofony pro velké množství účastníků. Navíc jsou zahrnuty služby DJ, který pomůže nejen hezky zazpívat, ale také rozpumpovat dav svým vystoupením."
+                "name": "Párty",
+                "price": "17 000 Kč + DPH",
+                "time": "až 6 hodin",
+                "person": "DJ a zvukový technik",
+                "equipment": "LED televize 50 palců",
+                "microphone": "4 mikrofony",
+                "volume": "Zvuk 4 kW",
+                "amount": "až 200 lidí",
+                "text": "V této nabídce nabízíme pronájem karaoke systému s výkonným zvukem a mikrofony pro velký počet účastníků. Kromě toho jsou zahrnuty DJ služby, (možnost hrát a zapařit v přestávkách, písničky na přání, vytvoření lepší atmosféry pro karaoke party)"
             },
             {
-                "název": "Premium",
-                "cena": "42 000 czk + DPH",
-                "čas": "do 6 hodin",
-                "osoba": "DJ, zvukový technik a světelný technik",
-                "vybavení": "Velká obrazovka 3,5m x 2m + 50 palců, profesionální osvětlení jeviště.",
-                "mikrofon": "4 mikrofony",
-                "hlasitost": "Zvuk 4 kW",
-                "počet": "až 200 osob",
-                "text": "Premium balíček je luxusní sestava pro galavečery, která karaoke vystoupení promění v opravdové show vysoké úrovně. Zajišťuje vynikající zvuk a světelné efekty, které dodají Vaší akci eleganci a jedinečnost. Zažijte sebe jako hvězdu s naším prémiovým balíčkem."
+                "name": "Premium",
+                "price": "42 000 Kč + DPH",
+                "time": "až 6 hodin",
+                "person": "DJ a zvukový technik, osvětlovací technik",
+                "equipment": "Velká projekce 3,5 m x 2 m + Led televize 50 palců, profesionální osvětlení pódia a tanečního parketu.",
+                "microphone": "4 mikrofony",
+                "volume": "Zvuk 4 kW",
+                "amount": "až 200 lidí",
+                "text": "Premium balíček je luxusní sestava pro firemní večírky nebo galavečery, která přemění karaoke vystoupení v show na vysoké úrovni. Poskytuje vynikající zvuk a jasné osvětlení, které přidává eleganci a jedinečnost vašemu večírku. Staňte se hvězdou večera s naším premium balíčkem."
             }
         ],
         "title": "Ceny",

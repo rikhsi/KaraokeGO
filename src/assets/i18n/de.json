@@ -68,95 +68,83 @@
         "confirm": "Durch das Absenden dieses Formulars stimmen Sie der Verarbeitung personenbezogener Daten zu."
     },
     "about": {
-        "title": "Wer wir sind",
+        "title": "WER WIR SIND",
         "texts": {
-        "first": "Wir sind ein Team von Menschen, die besessen von gutem Sound sind. Seit 8 Jahren bieten wir technische Unterstützung für Veranstaltungen an: Installation von Ton- und Lichtanlagen, Auswahl von DJs und Musikern. Wir organisieren Karaoke vor Ort in Prag und überall in der Tschechischen Republik und Europa.",
-        "second": "Wir glauben, dass Musik ein sehr wichtiger Teil jeder Feier ist. Es setzt die Stimmung der Gäste und unsere Aufgabe ist es, Ihnen diese Stimmung zu bieten. Wir arbeiten mit führenden Künstlern und Musikern in Europa zusammen und garantieren die Qualität ihrer Arbeit."
+        "first": "Wir sind ein Team von Menschen, die von der Qualität des Sounds besessen sind. Seit 15 Jahren bieten wir technische Unterstützung für Veranstaltungen: Ton- und Lichtinstallation, Auswahl von DJs und Musikern. Wir organisieren Karaoke-Partys nicht nur in Prag, sondern auch in der ganzen Tschechischen Republik und in Europa.",
+        "second": "Wir glauben, dass Musik ein wichtiger Bestandteil jeder Feier ist. Unser Ziel ist es, dafür zu sorgen, dass Ihre Party die richtige Atmosphäre hat und dass Ihre Gäste sich in vollen Zügen amüsieren. Deshalb arbeiten wir mit den führenden Künstlern, Musikern, Toningenieuren, Lichttechnikern und anderen Veranstaltungsprofis in Europa zusammen. Wir garantieren die Qualität der Arbeit unserer Fachleute und bemühen uns, alle Ihre Anforderungen zu erfüllen."
         }
     },
     "boon": {
         "title": "Was ist enthalten?",
         "cards": [
             {
-            "title": "Karaoke-System mit Videodisplay",
-            "text": "Anstelle nur den Text auf dem Bildschirm zu lesen, zeigt das Videodisplay Clips oder Animationen, die zum Song passen. Dies schafft ein ansprechenderes und interaktiveres Erlebnis für die Benutzer und hilft ihnen, sich besser in die Musik einzutauchen."
+            "title": "Karaoke-Anlage mit Videodisplay",
+            "text": "Anstatt nur den Liedtext auf dem Bildschirm anzuzeigen, bieten wir ein Karaoke-System mit einem Videodisplay an, das Clips oder Animationen zum jeweiligen Lied zeigt. Dies ermöglicht den Benutzern ein unterhaltsameres und interaktiveres Erlebnis, das ihnen hilft, Karaoke-Partys besser zu genießen und eine echte musikalische Performance zu liefern"
             },
             {
-            "title": "55-Zoll-Bildschirm",
-            "text": "Ein großer Bildschirm bietet bequemes Anzeigen der Liedtexte für alle Teilnehmer. Darüber hinaus erleichtert ein großer Bildschirm das Lesen von Liedtexten für Personen mit schwacher Sehkraft."
+            "title": "Große Bildschirme für das ultimative Erlebnis: 50-Zoll-LED-Fernseher bis hin zu 3x5m großen LED-Bildschirmen",
+            "text": "Wir verfügen über einen 55-Zoll-Fernseher und einen bis zu 3 x 5 Meter großen LED-Bildschirm, auf dem die Liedtexte für alle Teilnehmer angezeigt werden können. Der große Bildschirm macht es auch Menschen mit Sehschwäche leichter, die Texte zu lesen."
             },
             {
-            "title": "Leistungsstarkes Akustiksystem von Bose, Electro Voice, Yamaha",
-            "text": "Leistungsstarke Akustiksysteme können eine höhere Klangqualität bieten als gewöhnliche Audio-Systeme. Dies ist insbesondere für Karaoke wichtig, da guter Klang eine notwendige Voraussetzung dafür ist, dass Benutzer Lieder singen und die Musik genießen können."
+            "title": "Songkatalog - über 100.000 Treffer",
+            "text": "Mehr als 100.000 Hits im Songkatalog in verschiedenen Sprachen (ENG, CZ, SK, PL, RU, UKR, IT, ES, DE und mehr) bieten eine riesige Auswahl an Musik für Karaokeauftritte. Dank dieser großen Auswahl an Songs können die Vorlieben aller Teilnehmer, die unterschiedliche musikalische Vorlieben und Interessen haben können, befriedigt werden."
             },
             {
-            "title": "Song-Katalog - über 100.000 Hits",
-            "text": "Ein Katalog von 100.000 Liedern bietet Benutzern eine riesige Auswahl an Musik zum Aufführen. Dies ermöglicht es, die Anfragen aller Teilnehmer zu erfüllen, die unterschiedliche Vorlieben in Genres und Künstlern haben können."
+                "title": "Bis zu 5 drahtlose Mikrofone mit guter Klangqualität für Karaoke-Partys",
+                "text": "Wir verwenden nur die besten Marken wie Shure, Sennheiser und JBL, die sich hervorragend für Karaoke-Partys eignen. Mikrofone mit Nierencharakteristik und hervorragender Klangqualität. Es ist eine gute Wahl für Karaoke-Partys, weil die Mikrofone haben eine ausgezeichnete Empfindlichkeit und sind einfach zu bedienen."
             },
             {
-            "title": "3 Mikrofone mit gutem Klang",
-            "text": "Die Liefer- und Installationsdienste bieten maximale Bequemlichkeit für Kunden, die sicher sein können, dass die Ausrüstung vor Ort geliefert und installiert wird, ohne dass sie Zeit und Mühe für die Organisation und Einrichtung der Ausrüstung aufwenden müssen."
-            },
-            {
-            "title": "Tontechniker erledigt alle technischen Arbeiten",
-            "text": "Der Tontechniker verfügt über professionelle Fähigkeiten im Bereich der Tonausrüstung und kann alle Geräte bei der Veranstaltung für die beste Klangqualität einrichten. Er kann auch den Klang während der Aufführung anpassen, um die Stimmen der Künstler so klar und deutlich wie möglich klingen zu lassen."
-            },
-            {
-            "title": "Lieferung - Wir installieren es überall in Europa",
-            "text": "Liefer- und Installationsdienste bieten maximale Bequemlichkeit für Kunden, die sicher sein können, dass die Ausrüstung vor Ort geliefert und installiert wird, ohne dass sie Zeit und Mühe für die Organisation und Einrichtung der Ausrüstung aufwenden müssen."
-            },
-            {
-            "title": "Stimmverarbeitung",
-            "text": "Die Stimmverarbeitungstechnologie ermöglicht es, die Klangqualität zu verbessern, Fehler in der Stimme auszugleichen, Geräusche und Interferenzen zu eliminieren. Dadurch können die Künstler professioneller und ausdrucksstärker klingen."
+            "title": "Lieferung - wir können überall in Europa installieren",
+            "text": "Der Versand und die Installation unsererseits bieten den ultimativen Komfort für den Kunden, der sicher sein kann, dass die Geräte an den Veranstaltungsort geliefert und dort installiert werden, ohne dass er Zeit und Mühe für die Organisation und den Aufbau der Audioausrüstung aufwenden muss. Wir kümmern uns um alles, damit Ihre Veranstaltung reibungslos und ohne Probleme abläuft. Sollte es während der Veranstaltung zu Problemen mit der Ausrüstung kommen, stehen unsere Techniker zur Verfügung, um Ihnen zu helfen und alle Probleme zu lösen, die auftreten können."
             }
         ]
     },
     "rates": {
         "cards": [
             {
-            "name": "Zuhause",
-            "price": "4500 CZK - für Einzelpersonen",
+            "name": "Party zu Hause",
+            "price": "4500 CZK - gültig nur für Einzelpersonen",
             "time": "bis zu 24 Stunden",
             "person": "",
             "equipment": "",
-            "microphone": "2 Mikrofone, 4 Party-Lichter",
-            "volume": "500 W Klang",
+            "microphone": "2 Mikrofone, 4 Partylichter",
+            "volume": "500 W Ton",
             "amount": "bis zu 20 Personen",
-            "text": "Dieses Paket ist für den Gebrauch zu Hause konzipiert. Es umfasst die Mindestkomponenten für die Organisation einer Karaoke-Party, einschließlich Mikrofone, Party-Lichter, Soundsystem und der Möglichkeit, es für eine kleine Gruppe von Personen zu nutzen."
+            "text": "Dieses Paket ist für den Heimgebrauch bestimmt. Es enthält die Mindestkomponenten für eine Karaoke-Party, einschließlich Mikrofone, Partylichter, Soundsystem und die Möglichkeit, eine Karaoke-Party zu Hause zu genießen."
             },
             {
-            "name": "Basic",
-            "price": "10.000 CZK + MwSt.",
+            "name": "Grundlegend",
+            "price": "10 000 CZK + MEHRWERTSTEUER",
             "time": "bis zu 6 Stunden",
             "person": "Tontechniker",
-            "equipment": "LED Fernseher 50 Zoll",
-            "microphone": "2 Mikrofone, 4 Party-Lichter",
-            "volume": "1 KW Sound",
-            "amount": "bis zu 50 Personen",
-            "text": "Das Basic-Paket enthält bereits professionellere Ausrüstung zur Erzeugung besserer Klangqualität, einschließlich eines Tontechnikers und der Möglichkeit, es für eine kleine Gesellschaft zu nutzen."
+            "equipment": "LED-Fernseher 50 Zoll",
+            "microphone": "2 Mikrofone, 4 Partyscheinwerfer",
+            "volume": "1 KW Ton",
+            "amount": "Bis zu 50 Personen",
+            "text": "Das Basispaket beinhaltet professionelles Equipment, um eine bessere Atmosphäre zu schaffen, einschließlich eines Tontechnikers und der Möglichkeit, Karaoke für eine kleinere Anzahl von Personen zu nutzen."
             },
             {
                 "name": "Party",
-                "price": "17.000 czk + MwSt.",
+                "price": "17 000 CZK + MEHRWERTSTEUER",
                 "time": "bis zu 6 Stunden",
-                "person": "DJ, Tontechniker und Lichttechniker",
-                "equipment": "Großer Bildschirm 3,5m x 2m + 50 Zoll, professionelle Bühnenbeleuchtung.",
+                "person": "DJ und Tontechniker",
+                "equipment": "LED-Fernseher 50 Zoll",
                 "microphone": "4 Mikrofone",
-                "volume": "Sound 4 kW",
-                "amount": "bis zu 200 Personen",
-                "text": "In diesem Paket bieten wir die Vermietung eines Karaoke-Systems mit leistungsstarkem Sound und Mikrofonen für eine große Anzahl von Teilnehmern an. Darüber hinaus sind DJ-Services enthalten, die nicht nur schön singen, sondern auch mit ihrer Performance die Menge anheizen werden."
-                },
-                {
-                "name": "Premium",
-                "price": "42.000 czk + MwSt.",
-                "time": "bis zu 6 Stunden",
-                "person": "DJ, Tontechniker und Lichttechniker",
-                "equipment": "Großer Bildschirm 3,5m x 2m + 50 Zoll, professionelle Bühnenbeleuchtung.",
-                "microphone": "4 Mikrofone",
-                "volume": "Sound 4 kW",
-                "amount": "bis zu 200 Personen",
-                "text": "Das Premium-Paket ist eine luxuriöse Ausstattung für Galaveranstaltungen und verwandelt Karaoke-Auftritte in eine Show auf hohem Niveau. Es bietet exzellenten Sound und helle Lichteffekte, die Eleganz und Einzigartigkeit zu Ihrer Veranstaltung hinzufügen. Fühlen Sie sich wie ein Star mit unserem Premium-Paket."
-                }
+                "volume": "Beschallung 4 kW",
+                "amount": "Bis zu 200 Personen",
+                "text": "In diesem Angebot bieten wir den Verleih einer Karaoke-Anlage mit leistungsstarkem Sound und Mikrofonen für eine große Anzahl von Teilnehmern an. Darüber hinaus ist ein DJ-Service inbegriffen (Möglichkeit, in den Pausen zu spielen und zu feiern, Lieder auf Anfrage, um eine bessere Atmosphäre für Karaoke-Partys zu schaffen)"
+            },
+            {
+            "name": "Prämie",
+            "price": "42 000 CZK + MEHRWERTSTEUER",
+            "time": "bis zu 6 Stunden",
+            "person": "DJ und Tontechniker, Lichttechniker",
+            "equipment": "Großprojektion 3,5 m x 2 m + Led TV 50 Zoll, professionelle Beleuchtung der Bühne und der Tanzfläche.",
+            "microphone": "4 Mikrofone",
+            "volume": "Beschallung 4 kW",
+            "amount": "Bis zu 200 Personen",
+            "text": "Das Premium-Paket ist ein Luxus-Setup für Firmenfeiern oder Galas, das Karaoke-Darbietungen in eine Show auf hohem Niveau verwandelt. Es bietet exzellenten Sound und helle Beleuchtung, die Ihrer Party Eleganz und Einzigartigkeit verleihen. Seien Sie der Star des Abends mit unserem Premium-Paket."
+            }
         ],
         "title": "Preise",
         "button": "Bestellen"
