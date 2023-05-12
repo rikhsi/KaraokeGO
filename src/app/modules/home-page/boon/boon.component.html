@@ -25,9 +25,9 @@
                 </div>
                 <div nz-col nzXs="24" nzXl="14">
                     <div nz-row [nzGutter]="[16]">
-                        <div nz-col nzSpan="12" *ngFor="let photo of card.images">
+                        <div nz-col nzSpan="12" *ngFor="let photo of card.images; let i = index">
                             <div class="boon__card">
-                                <img nz-image [nzSrc]="'../../../../assets/img/boon/'+ photo" [nzFallback]="fallback" alt="boon">
+                                <img nz-image [nzSrc]="'../../../../assets/img/boon/'+ photo" [nzFallback]="fallback" alt="boon" [style.object-fit]="i === 3 ? 'contain' : 'cover'">
                             </div>
                         </div>
                     </div>
@@ -36,6 +36,7 @@
         </div>
     </ng-template>
 </swiper>
+
 
 <ng-template #buttons>
     <div class="boon__buttons">

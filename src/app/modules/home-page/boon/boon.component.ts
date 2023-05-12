@@ -36,9 +36,9 @@ export class BoonComponent implements OnInit {
     this.translateService.get('boon.cards').subscribe(data => {
       this.cards = data;
       this.cards.forEach((data, index) => {
-        const firstImageIndex = index * 2 + 1;
-        const secondImageIndex = index * 2 + 2;
-        data.images = [`${firstImageIndex}.png`, `${secondImageIndex}.png`];
+        const firstImageIndex = this.photos[index *2 + 1];
+        const secondImageIndex = this.photos[index *2 + 2];
+        data.images = [`${firstImageIndex}`, `${secondImageIndex}`];
       });
     });
   }
@@ -48,9 +48,9 @@ export class BoonComponent implements OnInit {
       this.translateService.get('boon.cards').subscribe(data => {
         this.cards = data;
         this.cards.forEach((data, index) => {
-          const firstImageIndex = index * 2 + 1;
-          const secondImageIndex = index * 2 + 2;
-          data.images = [`${firstImageIndex}.png`, `${secondImageIndex}.png`];
+          const firstImageIndex = this.photos[index *2 + 1];
+          const secondImageIndex = this.photos[index *2 + 2];
+          data.images = [`${firstImageIndex}`, `${secondImageIndex}`];
         });
       });
     });

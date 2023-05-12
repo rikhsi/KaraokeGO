@@ -42,8 +42,13 @@
     &__card{
         height: 616px;
         border-radius: 240px;
-        background-color: @grayishWhite;
+        background-color: white;
         overflow: hidden;
+
+        @media (max-width:1199px) {
+            height: 500px;
+            border-radius: 108px;
+        }
 
         @media (max-width:767px) {
             height: 282px;
@@ -51,7 +56,7 @@
         }
 
         img{
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 }
