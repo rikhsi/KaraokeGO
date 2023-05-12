@@ -27,7 +27,7 @@
                     <div nz-row [nzGutter]="[16]">
                         <div nz-col nzSpan="12" *ngFor="let photo of card.images; let i = index">
                             <div class="boon__card">
-                                <img nz-image [nzSrc]="'../../../../assets/img/boon/'+ photo" [nzFallback]="fallback" alt="boon" [style.object-fit]="i === 3 ? 'contain' : 'cover'">
+                                <img nz-image [nzSrc]="'../../../../assets/img/boon/'+ photo" [nzFallback]="fallback" alt="boon">
                             </div>
                         </div>
                     </div>
