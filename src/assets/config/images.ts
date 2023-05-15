@@ -18,10 +18,12 @@ export const advantagesImages = [
 
 export const boonImages = [
     "",
-    "voice11.png",
-    "voice2.png",
+    "display1.png",
+    "display2.png",
     "monitor1.png",
     "monitor1.JPG",
+    "voice11.png",
+    "voice2.png",
     "catalog1.png",
     "catalog2.PNG",
     "micro.png", 
