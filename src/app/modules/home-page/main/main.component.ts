@@ -8,6 +8,7 @@ import { fadeInOut } from 'src/app/animations/effects';
 import { contacts, links } from 'src/assets/config/contacts';
 import SwiperCore, { EffectFade, Autoplay, SwiperOptions} from 'swiper';
 import { mainImages } from 'src/assets/config/images';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'go-main',
@@ -73,22 +74,37 @@ export class MainComponent implements OnInit{
     
   }
 
-  constructor(private translateService: TranslateService, private helperService: HelperService){
+  constructor(private translateService: TranslateService, private helperService: HelperService, private router: Router){
     SwiperCore.use([EffectFade,Autoplay]);
   }
 
   ngOnInit(): void {
     timer(200).subscribe(() => this.isAnimate = false);
     this.photos = mainImages;
-    this.currentLang = this.translateService.getDefaultLang();
+    this.currentLang = this.getPage();
     this.linksList = links;
     this.contactsList = contacts;
   }
+  
+  getPage(): string {
+    const page: string = this.router.url;
+    if (page === '/en') {
+      return 'en';
+    } 
+    if (page === '/ru') {
+      return 'ru';
+    } 
+    if (page === '/cz') {
+      return 'cz';
+    } 
+    if (page === '/de') {
+      return 'de';
+    } 
+    return 'en'
+  }
 
   changeLang(lang: string):void {
-    localStorage.setItem('lang', lang);
-    this.translateService.use(lang);
-    this.currentLang = lang;
+    this.router.navigate([lang]);
   }
 
   openModal(): void {

@@ -3,7 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './modules/home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent },
+  { path: 'en', component: HomePageComponent },
+  { path: 'ru', component: HomePageComponent },
+  { path: 'cz', component: HomePageComponent },
+  { path: 'de', component: HomePageComponent },
+  { path: '**', redirectTo: 'en'},
   {
     path: "offer",
     loadChildren: () => import('./modules/offer/offer.module').then(m => m.OfferModule)
